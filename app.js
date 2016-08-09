@@ -1,3 +1,10 @@
+'use strict'
+
+const env         = process.env.NODE_ENV || 'development';
+const DEV         = env==='development';
+const dotenv      = (DEV) ? require('dotenv').config() : undefined;
+
+
 const express     = require('express')
 const app         = express()
 const PORT        = process.env.PORT || 3000
@@ -10,7 +17,8 @@ const addressRoute   = require('./routes/address')
 // const apiRoute    = require('./routes/api_route')
 
 
-app.use(logger('dev'));
+app.use( logger( DEV ? 'dev' : 'common') );
+
 app.use(express.static(path.join(__dirname, 'public')))
 //app.use('/bower_components', express.static(path.join(__dirname, '/bower_components')))
 

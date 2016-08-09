@@ -7,10 +7,10 @@ module.exports = {
 
 getAddresses(req, res, next) {
     console.log("get Addresses model")
-    _db.any(`SELECT incident_location FROM incidents;`)
+    _db.any(`SELECT * FROM incidents;`)
         .then( address=> {
           res.rows = address ;
-          console.log(address);
+          console.log(address)
           next()
         })
         .catch(error =>{

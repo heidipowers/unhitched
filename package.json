@@ -23,5 +23,8 @@
     "path": "^0.12.7",
     "pg-promise": "^5.2.7",
     "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "dotenv": "^2.0.0"
   }
 }
