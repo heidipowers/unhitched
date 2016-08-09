@@ -8,39 +8,34 @@ module.exports = {
 
     getMap(req, res, next) {
 
-        const musicSearch = req.query.type
-        const inputValue = req.query.value //new RegExp( '^' + req.query.value, 'i')
         const URL = 'https://maps.googleapis.com/maps/api/geocode/json?address=';
 
         let qs = {
-          'key': KEYx
+          'key': KEY
         }
 
-        if (musicSearch === 'artist') {
-          qs.artist = inputValue;
-        } else {
-          qs.title = inputValue;
-        }
+
+          qs.address = 'Columbus Circle, NY'
+
 
         request.get({
               url: URL,
               qs: qs,
-              headers: {
-                'User-Agent': 'request'
-              },
               json: true
             }, (err, response, data) => {
               if (err) throw err
-              let mapMarkers = data
-              res.results = mapMarkers.results
-                //console.log(res.results)
+              res.results = data.results;
+              res.results.map(function(address){
+                console.log(address.formatted_address)
+              })
+
                 //console.log(URL)
               next()
             } //end function
 
           ) //end request.get
 
-      }, //end showArtist
+      }, //end getMap
 
 
   } //module-exports

@@ -24,6 +24,6 @@ app.get('/', (req, res)=>{
   res.render('index');
 })
 
-app.get('/map', mapRoute);
+app.use('/map', mapRoute);
 
 app.listen(PORT, ()=> console.log("sever magic on ", PORT));
