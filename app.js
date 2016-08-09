@@ -4,8 +4,8 @@ const PORT        = process.env.PORT || 3000
 const logger      = require('morgan')
 const path        = require('path')
 
-const mapRoute = require('./routes/map')
-// const userRoute   = require('./routes/user_route')
+const mapApiRoute = require('./routes/map')
+const addressRoute   = require('./routes/address')
 // const homeRoute   = require('./routes/home_route')
 // const apiRoute    = require('./routes/api_route')
 
@@ -24,6 +24,7 @@ app.get('/', (req, res)=>{
   res.render('index');
 })
 
-app.use('/map', mapRoute);
+app.use('/map', mapApiRoute);
+app.use('/address', addressRoute)
 
 app.listen(PORT, ()=> console.log("sever magic on ", PORT));

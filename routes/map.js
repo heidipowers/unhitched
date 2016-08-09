@@ -1,6 +1,6 @@
 'use strict'
 
-const mapModel = require('../models/map')
+const mapModel = require('../models/map');
 const mapRouter = require('express').Router();
 
 
