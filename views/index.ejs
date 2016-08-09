@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Unhitched</title>
+  <link type="text/css" rel="stylesheet" href="css/pageflip.css">
+  <link rel="stylesheet" href="css/app.css">
+  <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script type="text/javascript" src="js/pageflip5-min.js"></script>
+  <script type="text/javascript" src="js/key.js"></script>
+  <script src="js/app.js"></script>
+
+</head>
+<body>
+  <div id="intro">
+    <div class="content">
+      <h1>"Many people have sighed for the 'good old days' and regretted the 'passing of the horse'. But today, when only those who like horses own them, it is a far better time for horses."</h1>
+      <h2>C.W. Anderson</h2>
+    </div>
+  </div>
+
+  <div id="history-book">
+    <div id="pageflip"> </div>
+
+      <script type="text/javascript">
+      var $pageflip = $('#pageflip'),
+      pageflip = $pageflip.pageflip();
+
+      /* MEET PAGEFLIP CUSTOM FUNCTIONS */
+      var animmode = 1,
+        animbtns = [ "#animateontop", "#animateonvisible" ],
+        loop = false,
+        rot = 0,
+        target,
+        zooming = false,
+        CustomPFEventHandler = {
+          onFlip: function( PN )  {
+            if( PN==18 ) $("#isflipping").addClass("selected");
+          },
+          onFlipEnd: function( PN ) {
+            if( PN==18 ) $("#isflipping").removeClass("selected");
+          },
+          onTop: function( PN ) {
+            if( PN==21 && animmode==0 ) startLoop();
+            if( PN==18 ) $("#isontop").addClass("selected");
+          },
+          onTopEnd: function( PN ) {
+            if( PN==21 && animmode==0 ) stopLoop();
+            if( PN==18 ) $("#isontop").removeClass("selected");
+          },
+          onLoad: function( PN ) {
+            if( PN==11 ) videoInit();
+            if( PN==18 ) setZoomFlag();
+          },
+          onUnload: function( PN ) {
+            if( PN==21 && animmode==1 ) stopLoop();
+          },
+          onHide: function( PN ) {
+            if( PN==21 && animmode==1 ) stopLoop();
+            if( PN==18 ) $("#isvisible").removeClass("selected");
+          },
+          onShow: function( PN ) {
+            if( PN==21 ) {
+              if( animmode==1 ) startLoop();
+              else setRot();
+              animation( animmode );
+            }
+            if( PN==18 ) $("#isvisible").addClass("selected");
+          },
+          onZoomIn: function( PN ) {
+            zooming = true;
+            setZoomFlag();
+          },
+          onZoomOut: function( PN ) {
+            zooming = false;
+            setZoomFlag();
+          }
+        };
+
+      gotoPage = function( p ) {
+        pageflip.gotoPage( p, true );
+      }
+      videoPlay = function() {
+        var myVideo = document.getElementById("thevideo");
+        if (myVideo.paused) myVideo.play();
+        else myVideo.pause();
+      }
+      videoInit = function() {
+        //var myVideo = document.getElementById("thevideo");
+      }
+      selectFeature = function( f ) {
+        $(".features").addClass("off");
+        $("#feature"+f).removeClass("off");
+        $("#featurelist ul li").removeClass("selected");
+        $("#option"+f).addClass("selected");
+      }
+      animation = function( t ) {
+        animmode = t;
+        $(".animationcontrol").removeClass("selected");
+        $(animbtns[t]).addClass("selected");
+      }
+      theLoop = function() {
+        if( loop ) raf2( theLoop );
+        setRot();
+      }
+      setRot = function() {
+        $("#spiral").css( { transform: "rotate("+rot+"deg)" } );
+        rot = ( rot+4 )%360;
+      }
+      startLoop = function() {
+        if( !loop ) {
+          loop = true;
+          theLoop();
+        }
+      }
+      stopLoop = function() {
+        loop = false;
+      }
+      setZoomFlag = function() {
+        if( zooming ) $("#iszooming").addClass("selected");
+        else $("#iszooming").removeClass("selected");
+      }
+      window.raf2 = (function(){
+        return  window.requestAnimationFrame       ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame    ||
+            function( callback ) {
+            window.setTimeout( callback, 100/6 );
+        };
+      })();
+      pageflip.setPFEventCallBack( CustomPFEventHandler );
+      /* END MEET PAGEFLIP CUSTOM FUNCTIONS */
+
+
+      /* Initialize & Start Pageflip 5 */
+      $pageflip.pageflipInit( {
+        /* Configuration options */
+          PageDataFile: "templates/history.html",
+          PageWidth: 900,
+          PageHeight: 600,
+          FullScreenEnabled: true,
+          Transparency: true,
+          Margin: 32,
+          MarginBottom: 64,
+          AutoScale: true,
+          FullScale: true,
+          AlwaysOpened: false,
+          AutoFlipLoop: -1,
+          CenterSinglePage: true,
+          DropShadowOpacity: 0.3,
+          FlipTopShadowOpacity: 0.2,
+          FlipShadowOpacity: 0.2,
+          HardFlipOpacity: 0.3,
+          EmbossOpacity: 0.2,
+          SecondaryDragArea: 32,
+          Transparency: true,
+          ControlbarFile: "common/controlbar_svg.html",
+          GoogleAnalytics: true,
+          HashControl: true,
+          ShowCopyright: false,
+          Copyright: Key.Copyright,
+          Key: Key.Key
+        /* book ID - used as CSS class name */
+      }, "meetpageflip" );
+      </script>
+
+  </div>
+
+  <div id="info" class="info-container">
+
+    <div id="scene1" class="info">
+      <h2>Scene 1 - Info</h2>
+
+
+    </div>
+
+    <div id="scene2" class="info">
+
+      <h2>Scene 2</h2>
+      <section class="left">
+      <h2>Left</h2>
+      <p>Somet tex here</p>
+      </section>
+      <section class="right">
+      <h2>Right</h2>
+      <p></p>
+      </section>
+    </div>
+
+    <div id="scene3" class="info">
+
+      <h2>Project 3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere quod voluptas asperiores, nisi, iste reprehenderit cum ipsa qui magnam ipsum excepturi repellendus nulla ipsam rerum illo, quaerat fugiat eius!</p>
+    </div>
+
+  </div><!-- end main -->
+
+
+  <div id="scene2">
+  </div>
+</body>
+</html>
