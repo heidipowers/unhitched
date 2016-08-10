@@ -2,13 +2,15 @@
 
 const dbModel = require('../models/db');
 
-const addressModel = require('../models/address');
+const addressModel = require('../models/address_model');
 const addressRouter = require('express').Router();
 
+
+//get list of addresses from DB
+
 addressRouter.get('/', addressModel.getAddresses, (req, res) => {
-  //res.send('hello')
-  console.log(res.results, "OUTSIDE")
-  res.json(res.results);
+  console.log(res.location, "OUTSIDE")
+  res.json(res.location);
 })
 
 

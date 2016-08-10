@@ -10,9 +10,10 @@ const app         = express()
 const PORT        = process.env.PORT || 3000
 const logger      = require('morgan')
 const path        = require('path')
+const KEY         = process.env.GOOGLEMAPTWO_KEY;
 
-const mapApiRoute = require('./routes/map')
-const addressRoute   = require('./routes/address')
+const mapApiRoute = require('./routes/map_route')
+const addressRoute   = require('./routes/address_route')
 // const homeRoute   = require('./routes/home_route')
 // const apiRoute    = require('./routes/api_route')
 
@@ -29,7 +30,8 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res)=>{
-  res.render('index');
+  res.render('index', {googleKey: KEY});
+  console.log(KEY, 'KEY');
 })
 
 app.use('/map', mapApiRoute);

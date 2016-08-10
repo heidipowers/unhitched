@@ -6,7 +6,9 @@ CREATE TABLE incidents (
   incident_date VARCHAR not null,
   horse_name VARCHAR(15),
   incident_desc TEXT not null,
-  incident_location VARCHAR not null
+  incident_location VARCHAR not null,
+  incident_lat DECIMAL not null,
+  incident_lng DECIMAL not null
 );
 
 CREATE INDEX on incidents (incident_type) ;
