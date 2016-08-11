@@ -3,7 +3,7 @@
 
 
 
-function buildMap(userChoice){
+function buildMap(){
 
 
 
@@ -19,6 +19,8 @@ function buildMap(userChoice){
               let years = [];
               let names = [];
               let month = [];
+
+              //GET DATA FOR VARIABLES
               incidents.forEach(function(incident){
                 years.push(incident.incident_year);
                 month.push(incident.incident_month);
@@ -43,15 +45,19 @@ function buildMap(userChoice){
               //thank you stackOverflow: http://stackoverflow.com/questions/9229645/remove-duplicates-from-javascript-array
               let cleanYears = [ ...new Set(years) ]
               //yearDied = [ ...new Set(yearDied)]
+              yearDied.reverse();
+
 
               //Make each name individual for chart x axis
               let nameAdjust = 0;
                 for (let i = 0; i < yearDied.length; i++){
                   if (names[i] === 'Unknown') {
                     nameAdjust+=1;
-                    names[i] = (names[i] + nameAdjust);
+                    names[i] = (names[i] + ' Horse ' + nameAdjust);
                   }
                 }
+
+                names.reverse();
 
               //Collect the number of incidents per month
               let months = {};
@@ -195,62 +201,24 @@ function buildMap(userChoice){
                             }
                         ]
                     };
-
-                  //     data = {
-                  //         labels: graphLabels,
-                  //         datasets: [{
-                  //             label: 'NYC Carriage Horse Deaths',
-                  //             data: graphData,
-                  //             backgroundColor: [
-                  //                 'rgba(255, 99, 132, 0.2)',
-                  //                 'rgba(54, 162, 235, 0.2)',
-                  //                 'rgba(255, 206, 86, 0.2)',
-                  //                 'rgba(75, 192, 192, 0.2)',
-                  //                 'rgba(153, 102, 255, 0.2)',
-                  //                 'rgba(255, 159, 64, 0.2)'
-                  //             ],
-                  //             borderColor: [
-                  //                 'rgba(255,99,132,1)',
-                  //                 'rgba(54, 162, 235, 1)',
-                  //                 'rgba(255, 206, 86, 1)',
-                  //                 'rgba(75, 192, 192, 1)',
-                  //                 'rgba(153, 102, 255, 1)',
-                  //                 'rgba(255, 159, 64, 1)'
-                  //             ],
-                  //             borderWidth: 1
-                  //         }]
-                  //     };
-
-                  //     options = {
-                  //         scales: {
-                  //             yAxes: [{
-                  //                 ticks: {
-                  //                     beginAtZero:true
-                  //                 }
-                  //             }]
-                  //         }
-                  //     };
                   }
 
               //BUILD CHART
               const ctx = document.getElementById("incidentChart");
-              // let graphLabels = incidentChart.data.datasets[0].label;
-              // let graphData = incidentChart.data.datasets[0].data;
 
               const incidentChart = new Chart(ctx, {
                 type: type,
                 data: data,
                 options: options
               });//end chart
-          //console.log(incidentChart.data.datasets[0].label)
-          //console.log(incidentChart.data.datasets[0].data)
+
         });//end get
 
 
 }//end buildmap
 
  const $userChoice = $('#chart-select');
- $userChoice.on('click', buildMap);
+ $userChoice.on('change', buildMap);
 
 //buildMap();
 
