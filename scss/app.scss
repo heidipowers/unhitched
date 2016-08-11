@@ -1,3 +1,4 @@
+//FOUNT IN HEADER PARTIAL
 #intro {
     height: 100vh;
     background: radial-gradient(circle, #74A6EE 0%, #485CB2 100%);
@@ -20,11 +21,31 @@ p {
 }
 
 
-.info {
-  background-image: url('../images/x.svg');
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center center;
+//SCENE 2
+#scene2 {
+
+    background-color: #666;
+    background-image: url('../images/x.svg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3em;
+      color: #fff;
+      padding: 4em 2em;
+
+    }
+
+    .info {
+    background-color: rgba(236, 232, 232, .4);
+    width: 80%;
+    margin: 0 auto;
+
+    }
+
 }
 
 //MAP
@@ -40,6 +61,10 @@ p {
 
 
 //BOOK
+
+#pageflip-controls {
+  padding: 8px 0 40px;
+}
 
 .pf-page-content {
 padding: 2em;
@@ -60,7 +85,6 @@ padding: 2em;
 
 #page2 {
   background-size: cover;
-
 }
 
 .firstpage {

@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Unhitched</title>
-  <link type="text/css" rel="stylesheet" href="css/pageflip.css">
-  <link rel="stylesheet" href="css/app.css">
-  <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-  <script type="text/javascript" src="js/pageflip5-min.js"></script>
-  <script type="text/javascript" src="js/key.js"></script>
-  <script src="js/Chart.js"></script>
-  <script src="js/main.js"></script>
-
+    <% include partials/head %>
 </head>
+
 <body>
-  <div id="intro">
-    <div class="content">
-      <h1>"Many people have sighed for the 'good old days' and regretted the 'passing of the horse'. But today, when only those who like horses own them, it is a far better time for horses."</h1>
-      <h2>C.W. Anderson</h2>
-    </div>
+
+  <header>
+   <!--  LANDING -->
+      <% include partials/scene_0 %>
+  </header>
+
+
+
+  <div id="scene1">
+    <!-- HISTORY BOOK -->
+    <% include partials/scene_1 %>
   </div>
 
-  <div id="history-book">
-    <div id="pageflip"> </div>
-    <script src=js/history-book.js></script>
+
+  <div id="scene2"">
+
+      <div class="info">
+        <h2>68 Medallions</h2>
+      </div>
+
+      <div class="info">
+        <h2>60 Owners</h2>
+      </div>
+
+      <div class="info">
+        <h2>220 Horses</h2>
+      </div>
+
+      <div class="info">
+        <h2>160 Full Time Drivers</h2>
+      </div>
+
+      <div class="info">
+        <h2>Represented by Teamsters union</h2>
+      </div>
+
+      <div class="info">
+         <h2>CASH BUSINESS</h2>
+      </div>
+
+      <div class="info">
+        <h2>Estimated Annual Revenue: 15 Million</h2>
+      </div>
 
   </div>
 
-  <div id="info" class="info-container">
-
-    <div id="scene1" class="info">
-      <h2>Scene 1 - Info</h2>
+  <div id="scene3">
+  </div>
 
 
-    </div>
 
-    <div id="scene2" class="info">
+    <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+      <script type="text/javascript">
+        var timeline_json = 'map/timeline'; // you write this part
+        // two arguments: the id of the Timeline container (no '#')
+        // and the JSON object or an instance of TL.TimelineConfig created from
+        // a suitable JSON object
+        window.timeline = new TL.Timeline('timeline-embed', timeline_json);
+      </script>
 
-      <h2>Scene 2</h2>
-      <section class="left">
-      <h2>Left</h2>
-      <p>Somet tex here</p>
-      </section>
-      <section class="right">
-      <h2>Right</h2>
-      <p></p>
-      </section>
-    </div>
 
-    <div id="scene3" class="info">
-
-      <h2>Project 3</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere quod voluptas asperiores, nisi, iste reprehenderit cum ipsa qui magnam ipsum excepturi repellendus nulla ipsam rerum illo, quaerat fugiat eius!</p>
-    </div>
-
-  </div><!-- end main -->
 
   <div class="chart">
     <h2>Choose a selection</h2>
@@ -79,7 +89,7 @@
 
   <div id="scene2">
   </div>
- <!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= googleKey %>&callback=getThatMap" type="text/javascript"></script>
-  <script src="js/build-map.js"></script> -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= googleKey %>&callback=getThatMap" type="text/javascript"></script>
+  <script src="js/build-map.js"></script>
 </body>
 </html>

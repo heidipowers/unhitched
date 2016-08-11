@@ -49,6 +49,7 @@ function buildMap(){
 
 
               //Make each name individual for chart x axis
+              names.reverse();
               let nameAdjust = 0;
                 for (let i = 0; i < yearDied.length; i++){
                   if (names[i] === 'Unknown') {
@@ -57,7 +58,7 @@ function buildMap(){
                   }
                 }
 
-                names.reverse();
+
 
               //Collect the number of incidents per month
               let months = {};
