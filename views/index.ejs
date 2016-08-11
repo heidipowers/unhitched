@@ -11,6 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
   <script type="text/javascript" src="js/pageflip5-min.js"></script>
   <script type="text/javascript" src="js/key.js"></script>
+  <script src="js/Chart.js"></script>
   <script src="js/main.js"></script>
 
 </head>
@@ -57,6 +58,19 @@
 
   </div><!-- end main -->
 
+  <div class="chart">
+    <h2>Choose a selection</h2>
+      <form>
+        <select id='chart-select'>
+            <option value="type" selected>Incident Type</option>
+            <option value="date">Incident Date</option>
+            <option value="fatal">Horse Fatality</option>
+       </select>
+      </form>
+  <canvas id="incidentChart">
+  </canvas>
+  </div>
+  <script src="js/custom-chart.js"></script>
 
   <div id="map_wrapper">
     <div id="map_canvas" class="mapping"></div>
@@ -65,7 +79,7 @@
 
   <div id="scene2">
   </div>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= googleKey %>&callback=getThatMap" type="text/javascript"></script>
-  <script src="js/build-map.js"></script>
+ <!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= googleKey %>&callback=getThatMap" type="text/javascript"></script>
+  <script src="js/build-map.js"></script> -->
 </body>
 </html>
