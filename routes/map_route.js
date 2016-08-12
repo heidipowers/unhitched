@@ -2,7 +2,7 @@
 
 const mapModel = require('../models/map_model');
 const mapRouter = require('express').Router();
-const testing = require('../db/test');
+const testing = require('../db/timeline');
 
 const addressModel = require('../models/address_model');
 
@@ -14,7 +14,11 @@ mapRouter.get('/', addressModel.getAddresses, mapModel.getMap, (req, res) => {
 })
 
 mapRouter.get('/timeline', (req, res)=>{
-  res.json(testing);
+  res.json(timeline);
+})
+
+mapRouter.get('/wordcloud', (req, res)=>{
+  res.send('hello')
 })
 
 
