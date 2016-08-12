@@ -10,6 +10,6 @@ user:       process.env.DB_USER,
 password:   process.env.DB_PASS,
 };
 
-const _db = pg(config);
+const _db = process.env.DATABASE_URL || pg(config);
 
 module.exports = _db;
