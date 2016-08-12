@@ -21,7 +21,6 @@ const incidentRoute   = require('./routes/incident_route')
 app.use( logger( DEV ? 'dev' : 'common') );
 
 app.use(express.static(path.join(__dirname, 'public')))
-//app.use('/bower_components', express.static(path.join(__dirname, '/bower_components')))
 
 
 
