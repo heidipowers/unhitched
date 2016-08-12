@@ -122,23 +122,23 @@
         },
        {
         "media": {
-          "url": "http://i.imgur.com/xOJhaxb.jpg",
-          "caption": "Meet The Drivers",
-          "credit": "Source: <a href='http://nymag.com/daily/intelligencer/2015/06/portraits-9-carriage-drivers-and-their-horses.html' target='_blank'>NY Times</a><br>Image: Konstantin Sergeyev"
+          "url": "https://youtu.be/xnNgAKQEN7U",
+          "caption": "The Industry Fights Back",
+          "credit": "Source: <a href='http://nymag.com/daily/intelligencer/2015/06/portraits-9-carriage-drivers-and-their-horses.html' target='_blank'>NY Times</a><br>Video: Save NY Horse Carriages"
         },
         "start_date": {
           "year": "2015"
         },
         "text": {
           "headline": "The People",
-          "text": "<p>With an carriage ban expected to pass, the New York Times profiled the people who would be most affected by changes to the industry - the drivers.</p><p><a href='http://nymag.com/daily/intelligencer/2015/06/portraits-9-carriage-drivers-and-their-horses.html' target='_blank'>Read the story.</a></p>"
+          "text": "<p>With an carriage ban expected to pass, the New York Times profiled the people who would be most affected by changes to the industry - the drivers.</p><p><a href='http://nymag.com/daily/intelligencer/2015/06/portraits-9-carriage-drivers-and-their-horses.html' target='_blank'>Read the story.</a></p><p>The website for the Save NY Horse Carriages is currently not live, but the industry does have a presence at <a href='http://carriageon.com/' target='_blank'>Carriage On</a></p>"
         }
       },
        {
         "media": {
-          "url": "https://youtu.be/xnNgAKQEN7U",
+          "url": "",
           "caption": "The Carriage Industry Responds",
-          "credit": "Source: <a href='http://www.nytimes.com/2016/02/05/nyregion horse-carriage-deal-new-york.html' target='_blank'>NY Times</a><br>Video: Save NY Horse Carriages></a>"
+          "credit": "Source: <a href='http://www.nytimes.com/2016/02/05/nyregion horse-carriage-deal-new-york.html' target='_blank'>NY Times</a><br>Video: Save NY Horse Carriages"
         },
         "start_date": {
           "year": "2016"

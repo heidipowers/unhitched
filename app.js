@@ -13,7 +13,7 @@ const path        = require('path')
 const KEY         = process.env.GOOGLEMAPTWO_KEY;
 
 const mapApiRoute = require('./routes/map_route')
-const addressRoute   = require('./routes/address_route')
+const incidentRoute   = require('./routes/incident_route')
 // const homeRoute   = require('./routes/home_route')
 // const apiRoute    = require('./routes/api_route')
 
@@ -36,6 +36,6 @@ app.get('/', (req, res)=>{
 
 
 app.use('/map', mapApiRoute);
-app.use('/address', addressRoute)
+app.use('/incident', incidentRoute)
 
 app.listen(PORT, ()=> console.log("sever magic on ", PORT));

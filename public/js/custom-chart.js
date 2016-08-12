@@ -7,7 +7,7 @@ function buildMap(){
 
 
 
-            $.get('/address', function(incidents) {
+            $.get('/incident', function(incidents) {
               /*optional stuff to do after success */
               //DATA RETURN FOR TYPE
               let traffic = 0;

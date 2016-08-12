@@ -5,7 +5,6 @@ const KEY = process.env.GOOGLEMAPS_KEY
 
 module.exports = {
 
-
     getMap(req, res, next) {
       //go to location db page and pull the location intersections
       //console.log(res.location)
