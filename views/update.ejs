@@ -5,10 +5,87 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
   <link type="text/css" rel="stylesheet" href="/css/app.css">
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.css">
 </head>
 <body>
-  <h1>UPDATE</h1>
+
     <div class="contain">
+     <h1>Update</h1>
+      <section class="update">
+          <form>
+            <div class="row">
+              <div class="large-4 columns">
+                <label>TYPE
+                      <select name="type">
+                        <option value="Traffic" required>Traffic</option>
+                        <option value="Collapse">Collapse</option>
+                        <option value="Park">Park</option>
+                      </select>
+                    </label>
+              </div>
+              <div class="large-4 columns">
+                  <label>MONTH
+                  <select name="month">
+                    <option value="january" required>January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                  </select>
+                </label>
+              </div>
+              <div class="large-4 columns">
+                <label>YEAR
+                  <input name="year" type="text" required/>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+             <div class="large-3 columns">
+                <label>HORSE NAME or Unknown
+                  <input name="horse-name" type="text" required />
+                </label>
+              </div>
+              <div class="large-3 columns">
+                <label>LOCATION
+                  <input name="location" type="text" required/>
+                </label>
+              </div>
+              <div class="large-3 columns">
+                <label>LAT
+                  <input name="lat" type="text" required />
+                </label>
+              </div>
+              <div class="large-3 columns">
+                <label>LNG
+                  <input name="long" type="text" required/>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label> DESCRIPTION
+                  <textarea name="description" required></textarea>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>FATAL</label>
+                <input type="radio" name="fatal" value="true" id="fatalTrue" required><label for="fatalTrue">Yes</label>
+                <input type="radio" name="fatal" value="false" id="fatalFalse" checked><label for="fatalFalse">No</label>
+              </div>
+            </div>
+            <input type="submit" class="button" value="Add New Incident" />
+          </form>
+      </section>
 
      <% incidents.forEach( function(incident){  %>
 
@@ -22,6 +99,7 @@
           <p>LOCATION: <%= incident.incident_location %></p>
           <p>LAT: <%= incident.incident_lat %></p>
           <p>LNG: <%= incident.incident_lng %></p>
+          <p>FATAL: <%= incident.fatal %></p>
           <button>Edit</button>
         </div>
 
