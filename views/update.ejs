@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link type="text/css" rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <h1>UPDATE</h1>
+    <div class="contain">
+
+     <% incidents.forEach( function(incident){  %>
+
+        <div class="update-outer">
+          <h2>Incident: <%= incident.incident_id %></h2>
+          <p>TYPE: <%= incident.incident_type %></p>
+          <p>MONTH: <%= incident.incident_month %></p>
+          <p>YEAR: <%= incident.incident_year %></p>
+          <p>HORSE: <%= incident.horse_name %></p>
+          <p>DESC: <%= incident.incident_description %></p>
+          <p>LOCATION: <%= incident.incident_location %></p>
+          <p>LAT: <%= incident.incident_lat %></p>
+          <p>LNG: <%= incident.incident_lng %></p>
+          <button>Edit</button>
+        </div>
+
+
+
+      <% }) %>
+    </div>
+</body>
+</html>
+
+
+

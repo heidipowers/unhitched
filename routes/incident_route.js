@@ -8,7 +8,8 @@ const incidentRouter = require('express').Router();
 
 incidentRouter.route('/update')
   .get (incidentModel.getIncidents, (req, res) => {
-    res.render('update', {incident: res.incidents});
+    console.log(res.incidents)
+    res.render('update', {incidents: res.incidents});
 })
 
 incidentRouter.route('/')

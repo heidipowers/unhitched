@@ -14,7 +14,7 @@ const KEY         = process.env.GOOGLEMAPTWO_KEY;
 
 const timelineRoute = require('./routes/timeline_route')
 const incidentRoute   = require('./routes/incident_route')
-const adminRoute    = require('./routes/user')
+//const adminRoute    = require('./routes/user')
 
 
 app.use( logger( DEV ? 'dev' : 'common') );
@@ -35,6 +35,6 @@ app.get('/', (req, res)=>{
 
 app.use('/timeline', timelineRoute);
 app.use('/incident', incidentRoute);
-app.use('/update', adminRoute);
+//app.use('/update', adminRoute);
 
 app.listen(PORT, ()=> console.log("sever magic on ", PORT));
