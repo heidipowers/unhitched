@@ -6,15 +6,14 @@ const incidentModel = require('../models/incident_model');
 const incidentRouter = require('express').Router();
 
 
-//get list of addresses from DB
-
-incidentRouter.get('/', incidentModel.getIncidents, (req, res) => {
-  console.log(res.incidents, "OUTSIDE")
-  res.json(res.incidents);
+incidentRouter.route('/update')
+  .get (incidentModel.getIncidents, (req, res) => {
+    res.render('update', {incident: res.incidents});
 })
 
-incidentRouter.get('/wordcloud', incidentModel.getWords ,(req, res)=>{
-  res.json(res.words)
+incidentRouter.route('/')
+  .get (incidentModel.getIncidents, (req, res) => {
+    res.json(res.incidents);
 })
 
 

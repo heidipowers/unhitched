@@ -26,36 +26,20 @@
 
       </div>
 
-        <div id="scene3">
-        </div>
-
-
-        <div id='timeline-embed' style="width: 100%; height: 600px"></div>
-          <script type="text/javascript">
-            var timeline_json = 'map/timeline';
-            window.timeline = new TL.Timeline('timeline-embed', timeline_json);
-          </script>
-
-
-
-        <div class="chart">
-          <h2>Choose a selection</h2>
-            <form>
-              <select id='chart-select'>
-                  <option value="type" selected>Incident Type</option>
-                  <option value="date">Incident Date</option>
-                  <option value="fatal">Horse Fatality</option>
-             </select>
-            </form>
-          <canvas id="incidentChart">
-          </canvas>
-      </div>
-       <script src="/js/custom-chart.js"></script>
-
-      <div id="map_wrapper">
-        <div id="map_canvas" class="mapping"></div>
+      <div id="scene3">
+        <!-- TIMELINE -->
+        <% include partials/scene_3 %>
       </div>
 
+      <div id="scene4">
+        <!-- CHART -->
+        <% include partials/scene_4 %>
+      </div>
+
+
+
+
+ <!-- END -->
   </div>
 
 
