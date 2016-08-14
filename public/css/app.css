@@ -2,6 +2,9 @@
   max-width: 70em;
   margin: 0 auto; }
 
+#full-length {
+  position: relative; }
+
 #scene1 {
   margin: 5em 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
@@ -22,7 +25,8 @@
   color: #fff;
   position: relative;
   background-position: center center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  -webkit-transform: rotateX(0); }
 
 .content {
   height: 100vh;
@@ -54,14 +58,21 @@ p {
     text-align: center;
     text-transform: uppercase;
     font-size: 3em;
-    color: #fff;
-    padding: 4em 2em; }
-  #scene2 .info {
-    background-color: rgba(236, 232, 232, 0.4);
-    width: 80%;
-    margin: 0 auto; }
+    color: #fff; }
   #scene2 section.animate {
     border-bottom: 1px solid red; }
+
+.info {
+  opacity: 0;
+  transition: all 1s ease-out;
+  margin: 5em 0;
+  background-color: rgba(236, 232, 232, 0.4);
+  width: 80%;
+  margin: 5em auto;
+  padding: 4em; }
+
+.fade-in {
+  opacity: 2; }
 
 #animate-left, #animate-right {
   display: inline-block;

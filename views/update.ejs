@@ -13,7 +13,7 @@
 
     <div class="contain">
      <h1>Update</h1>
-      <section class="update">
+
           <form name='add-it' method="POST" action="/incident/update">
             <div class="row">
               <div class="large-4 columns">
@@ -28,18 +28,18 @@
               <div class="large-4 columns">
                   <label>MONTH
                   <select name="month">
-                    <option value="january" required>January</option>
-                    <option value="february">February</option>
-                    <option value="march">March</option>
-                    <option value="april">April</option>
-                    <option value="may">May</option>
-                    <option value="june">June</option>
-                    <option value="july">July</option>
-                    <option value="august">August</option>
-                    <option value="september">September</option>
-                    <option value="october">October</option>
-                    <option value="november">November</option>
-                    <option value="december">December</option>
+                    <option value="January" required>January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
                   </select>
                 </label>
               </div>
@@ -92,6 +92,7 @@
      <% incidents.forEach( function(incident){  %>
 
         <div class="update-outer">
+          <div class="inner">
           <h2>Incident: <%= incident.incident_id %></h2>
           <p>TYPE: <%= incident.incident_type %></p>
           <p>MONTH: <%= incident.incident_month %></p>
@@ -103,6 +104,65 @@
           <p>LNG: <%= incident.incident_lng %></p>
           <p>FATAL: <%= incident.fatal %></p>
           <button>Edit</button>
+
+          <form name='update-it'>
+            <div class="row">
+              <div class="large-4 columns">
+                <label>TYPE
+                      <input type="text" name="type" placeholder=" <%= incident.incident_type %> "/>
+                  </label>
+              </div>
+              <div class="large-4 columns">
+                  <label>MONTH
+                     <input type= "text" name="month" placeholder=" <%= incident.incident_month %> "/>
+                </label>
+              </div>
+              <div class="large-4 columns">
+                <label>YEAR
+                  <input name="year" type="text" placeholder=" <%= incident.incident_month %> "/>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+             <div class="large-3 columns">
+                <label>HORSE NAME
+                  <input name="name" type="text" placeholder=" <%= incident.horse_name %>" />
+                </label>
+              </div>
+              <div class="large-3 columns">
+                <label>LOCATION
+                  <input name="location" type="text" placeholder=" <%= incident.incident_location %>"/>
+                </label>
+              </div>
+              <div class="large-3 columns">
+                <label>LAT
+                  <input name="lat" type="text" placeholder=" <%= incident.incident_lat %>" />
+                </label>
+              </div>
+              <div class="large-3 columns">
+                <label>LNG
+                  <input name="lng" type="text" placeholder=" <%= incident.incident_lng %>"/>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label> DESCRIPTION
+                  <textarea name="description" placeholder=" <%= incident.incident_desc %>"></textarea>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>FATAL</label>
+                 <input name="fatal" type="text" placeholder=" <%= incident.fatal %>">
+              </div>
+            </div>
+            <input type="submit" id="update-btn" class="button" value="Update Incident" />
+            <input type="button" id="no-update" class="button" value="Nevermind" />
+          </form>
+
+          </div>
         </div>
 
 

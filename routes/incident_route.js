@@ -11,9 +11,12 @@ incidentRouter.route('/update')
     res.render('update', {incidents: res.incidents});
 })
   .post(incidentModel.createNewIncident, (req, res) => {
-    console.log(req.body)
-    res.status(200).send('created incident');
-    console.log(req.incidents)
+    res.status(200);
+    res.redirect('/incident/update');
+  })
+  .put((req, res) => {
+    console.log(req.body, req.params)
+
   })
 
 incidentRouter.route('/')

@@ -1,8 +1,8 @@
 function addIncident(event) {
   event.preventDefault();
-  let $type = $('select[name="type"]').val();
+  let $type = $('input[name="type"]').val();
   console.log($type, "type")
-  let $month = $('select[name="month"]').val();
+  let $month = $('input[name="month"]').val();
   console.log($month, "month");
   let $year = $('input[name="year"]').val();
   console.log($year, "year");
@@ -16,28 +16,33 @@ function addIncident(event) {
   console.log($lng, 'lng');
   let $description = $('textArea[name="description"]').val();
   console.log($description, 'desc');
-  let $fatal = $('input[name="fatal"]:checked').val();
+  let $fatal = $('input[name="fatal"]').val();
   console.log($fatal, 'fatal');
 
-  $.ajax({
-    url: '/incident/update',
-    type: 'POST',
-  })
-  .done(function() {
-    console.log("success");
-  })
-  .fail(function() {
-    console.log("error");
-  })
-  .always(function() {
-    console.log("complete");
-  });
+
+
+
+  // $.ajax({
+  //   url: '/incident/update',
+  //   type: 'POST',
+  // })
+  // .done(function() {
+  //   console.log("success");
+  // })
+  // .fail(function() {
+  //   console.log("error");
+  // })
+  // .always(function() {
+  //   console.log("complete");
+  // });
 
 }
+
+
 
 $(document).ready(function() {
   console.log('loaded on updates page')
 
 
-  //$("#add-btn").on('click', addIncident);
+  $("#update-btn").on('click', addIncident);
 });

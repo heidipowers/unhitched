@@ -4,7 +4,7 @@ const env         = process.env.NODE_ENV || 'development';
 const DEV         = env==='development';
 const dotenv      = (DEV) ? require('dotenv').config() : undefined;
 
-
+const methodOverride  = require('method-override');
 const express     = require('express')
 const app         = express()
 const logger      = require('morgan')
@@ -23,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
 app.use(bodyParser.json())
+app.use(methodOverride('_method'))
 
 
 app.use( logger( DEV ? 'dev' : 'common') );

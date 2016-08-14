@@ -192,7 +192,7 @@ function getThatMap() {
     const infoWindow = new google.maps.InfoWindow();
 
     points.forEach(function(point){
-      console.log(point)
+
       // Display multiple markers on a map based on DB info
       const {incident_lat:lat,incident_lng:lng, incident_location:title} = point
 
