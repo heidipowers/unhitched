@@ -1,6 +1,8 @@
 $(document).ready(function() {
   console.log('All systems Go')
 
+
+//ANIMATION
 //http://gamedevelopment.tutsplus.com/tutorials/an-introduction-to-spritesheet-animation--gamedev-13099
 
 const leftPull = document.getElementById('left-pull');

@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <link type="text/css" rel="stylesheet" href="/css/app.css">
+  <title>UPDATE DB</title>
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.css">
+  <link type="text/css" rel="stylesheet" href="/css/app.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="/js/update.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 
     <div class="contain">
      <h1>Update</h1>
       <section class="update">
-          <form>
+          <form name='add-it' method="POST" action="/incident/update">
             <div class="row">
               <div class="large-4 columns">
                 <label>TYPE
@@ -50,7 +52,7 @@
             <div class="row">
              <div class="large-3 columns">
                 <label>HORSE NAME or Unknown
-                  <input name="horse-name" type="text" required />
+                  <input name="name" type="text" required />
                 </label>
               </div>
               <div class="large-3 columns">
@@ -65,7 +67,7 @@
               </div>
               <div class="large-3 columns">
                 <label>LNG
-                  <input name="long" type="text" required/>
+                  <input name="lng" type="text" required/>
                 </label>
               </div>
             </div>
@@ -83,7 +85,7 @@
                 <input type="radio" name="fatal" value="false" id="fatalFalse" checked><label for="fatalFalse">No</label>
               </div>
             </div>
-            <input type="submit" class="button" value="Add New Incident" />
+            <input type="submit" id="add-btn" class="button" value="Add New Incident" />
           </form>
       </section>
 
