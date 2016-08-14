@@ -12,53 +12,55 @@
       <% include partials/scene_0 %>
   </header>
 
+  <div id="full-length">
+
+      <div id="scene1">
+        <!-- HISTORY BOOK -->
+        <% include partials/scene_1 %>
+      </div>
 
 
-  <div id="scene1">
-    <!-- HISTORY BOOK -->
-    <% include partials/scene_1 %>
+      <div id="scene2"">
+
+        <% include partials/scene_2 %>
+
+      </div>
+
+        <div id="scene3">
+        </div>
+
+
+        <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+          <script type="text/javascript">
+            var timeline_json = 'map/timeline';
+            window.timeline = new TL.Timeline('timeline-embed', timeline_json);
+          </script>
+
+
+
+        <div class="chart">
+          <h2>Choose a selection</h2>
+            <form>
+              <select id='chart-select'>
+                  <option value="type" selected>Incident Type</option>
+                  <option value="date">Incident Date</option>
+                  <option value="fatal">Horse Fatality</option>
+             </select>
+            </form>
+          <canvas id="incidentChart">
+          </canvas>
+      </div>
+       <script src="/js/custom-chart.js"></script>
+
+      <div id="map_wrapper">
+        <div id="map_canvas" class="mapping"></div>
+      </div>
+
   </div>
 
 
-  <div id="scene2"">
 
-    <% include partials/scene_2 %>
-
-  </div>
-
-    <div id="scene3">
-    </div>
-
-
-    <div id='timeline-embed' style="width: 100%; height: 600px"></div>
-      <script type="text/javascript">
-        var timeline_json = 'map/timeline';
-        window.timeline = new TL.Timeline('timeline-embed', timeline_json);
-      </script>
-
-
-
-    <div class="chart">
-      <h2>Choose a selection</h2>
-        <form>
-          <select id='chart-select'>
-              <option value="type" selected>Incident Type</option>
-              <option value="date">Incident Date</option>
-              <option value="fatal">Horse Fatality</option>
-         </select>
-        </form>
-      <canvas id="incidentChart">
-      </canvas>
-  </div>
-   <script src="/js/custom-chart.js"></script>
-
-  <div id="map_wrapper">
-    <div id="map_canvas" class="mapping"></div>
-  </div>
-
-
-
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= googleKey %>&callback=getThatMap" type="text/javascript"></script>
-  <script src="/js/build-map.js"></script>
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= googleKey %>&callback=getThatMap" type="text/javascript"></script>
+  <script src="/js/build-map.js"></script> -->
 </body>
 </html>

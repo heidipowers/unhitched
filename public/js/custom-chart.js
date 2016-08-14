@@ -2,12 +2,13 @@
 
 function buildChart(){
 
-
+          console.log('fired')
 
             $.get('/incident', function(incidents) {
               /*optional stuff to do after success */
               //DATA RETURN FOR TYPE
               let traffic = 0;
+              let fatalities = 0;
               let park = 0;
               let collapse = 0;
               let total = incidents.length;
@@ -17,12 +18,16 @@ function buildChart(){
               incidents.forEach(function(incident){
                 years.push(incident.incident_year);
 
-                if (incident.incident_type === 'Traffic'){
+                if ( incident.incident_type === 'Traffic'){
                   traffic+=1;
-                } else if (incident.incident_type === 'Collapse'){
+                } else if ( incident.incident_type === 'Collapse'){
                   collapse+=1;
                 } else {
                   park+=1;
+                }
+
+                if ( incident.fatal ) {
+                  fatalities+=1;
                 }
 
               })//end forEach
@@ -36,6 +41,7 @@ function buildChart(){
 
               }
 
+              //Make yearsCollect into 2 arrays
               let yearNum = [];
               let yearCount = [];
 
@@ -48,8 +54,8 @@ function buildChart(){
 
 
               //SET CHART VARIABLES
-               const defaultLabel = ["Traffic Incidents", "Horse Collapses", "Incident Inside Central Park"];
-               const defaultData = [traffic, collapse, park];
+               const defaultLabel = ["Traffic Incidents", "Horse Collapses", "Incident Inside Central Park", "Horse Fatality"];
+               const defaultData = [traffic, collapse, park, fatalities];
                const defaultType = 'bar';
                let data;
                let options;
@@ -73,14 +79,16 @@ function buildChart(){
                               {
                                   data: graphData,
                                   backgroundColor: [
-                                      "#FF6384",
-                                      "#36A2EB",
-                                      "#FFCE56"
+                                      "#419ea8",
+                                      "#1F1F1F",
+                                      "#3D3D3D",
+                                      "#6f0d0d"
                                   ],
                                   hoverBackgroundColor: [
                                       "#FF6384",
                                       "#36A2EB",
-                                      "#FFCE56"
+                                      "#FFCE56",
+                                      "#3D3D3D"
                                   ]
                               }]
                       };
@@ -129,16 +137,17 @@ function buildChart(){
                 data: data,
                 options: options
               });//end chart
-
         });//end get
-
 
 }//end buildmap
 
- const $userChoice = $('#chart-select');
+//initial chartBuild on page load
+buildChart();
+
+//update Chart on userChoice
+const $userChoice = $('#chart-select');
  $userChoice.on('change', buildChart);
 
-buildChart();
 
 
 

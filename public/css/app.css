@@ -1,3 +1,15 @@
+#scene1 {
+  margin: 5em 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */ }
+
 #intro {
   height: 100vh;
   width: 100vw;
@@ -5,7 +17,8 @@
   text-align: center;
   color: #fff;
   position: relative;
-  background-position: center center; }
+  background-position: center center;
+  background-attachment: fixed; }
 
 .content {
   height: 100vh;
@@ -26,7 +39,13 @@ p {
   background-image: url("../images/x.svg");
   min-height: 100vh;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  background: #E6DADA;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #E6DADA, #274046);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #f6eaea, #274046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   #scene2 h2 {
     text-align: center;
     text-transform: uppercase;
@@ -37,6 +56,8 @@ p {
     background-color: rgba(236, 232, 232, 0.4);
     width: 80%;
     margin: 0 auto; }
+  #scene2 section.animate {
+    border-bottom: 1px solid red; }
 
 #animate-left, #animate-right {
   display: inline-block;

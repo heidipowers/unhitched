@@ -42,7 +42,7 @@ VALUES
 ('Traffic', 'November', 1997, 'Unknown', 'Spooked horse bolts into traffic, hitting a parked vehicle before jumping the sidewalk and dragging a pedestrian for several feet. The carriage driver left the scene but was later apprehended by NYPD.', 'Columbus Circle', 40.7680441, -73.9845609, FALSE),
 ('Collapse', 'May', 1997, 'Unknown', 'Horse trips while pulling carriage and dies while trying to get up.', '49th Street and 7th Avenue', 40.7604566, -73.9859116, TRUE),
 ('Collapse', 'September', 1996, 'Unknown', 'Carriage horse collapses and dies on the street.', '50 Central Park South', 40.7730268, -73.9783063, TRUE),
-('Traffic', 'May', 1990, 'Tony', 'Horse is fatally injured after being hit repeatedly by a bun operated by Metro Apple.', 'Not Stated', 40.7397433, -74.0025294, TRUE),
+('Traffic', 'May', 1990, 'Tony', 'Horse is fatally injured after being hit repeatedly by a bus operated by Metro Apple.', 'Not Stated', 40.7397433, -74.0025294, TRUE),
 ('Traffic', 'December', 1986, 'Unknown', 'Spooked horse collides with building', 'Not Stated', 40.7397433, -74.0025294, FALSE),
 ('Traffic', 'December', 1985, 'Unknown', 'Spooked horse bolts with carriage holding four passengers and collides with a vehicle. Horse did not survive.', 'Rockafeller Center', 40.7587402, -73.9808623, TRUE),
 ('Traffic', 'December', 1985, 'Unknown', 'Spooked horse bolts through traffic and is apprehended by NYPD.', '48th Street and Broadway', 40.7601347, -73.9870539, FALSE),
