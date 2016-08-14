@@ -1,13 +1,27 @@
 //FOUNT IN HEADER PARTIAL
+
+#scene1 {}
+
+
+
 #intro {
     height: 100vh;
-    background: radial-gradient(circle, #74A6EE 0%, #485CB2 100%);
+    width: 100vw;
+    background: url('../images/horseanimation.gif');
     text-align: center;
     color: #fff;
     position: relative;
+    background-position: center center;
 }
 
 .content {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0 ,0, 0, .5);
+
+}
+
+.cover {
   position: absolute;
   top: 50%;
   left: 50%;

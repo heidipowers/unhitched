@@ -68,7 +68,6 @@
 // //Go get the data
 //   $.get('/incident')
 //     .then(drawMap)
-
 // }
 
 
