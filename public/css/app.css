@@ -16,7 +16,6 @@ p {
   margin: 0 auto; }
 
 #scene2 {
-  background-color: #666;
   background-image: url("../images/x.svg");
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -31,6 +30,11 @@ p {
     background-color: rgba(236, 232, 232, 0.4);
     width: 80%;
     margin: 0 auto; }
+
+#animate-left, #animate-right {
+  display: inline-block;
+  width: 40%;
+  margin-left: 50px; }
 
 #map_wrapper {
   height: 500px; }
