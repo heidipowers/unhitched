@@ -2,6 +2,8 @@
 
 function buildChart(){
 
+
+
           console.log('fired')
 
             $.get('/incident', function(incidents) {
@@ -130,13 +132,16 @@ function buildChart(){
                     };
                   }
               //BUILD CHART
-              const ctx = document.getElementById("incidentChart");
 
+
+
+              const ctx = document.getElementById("incidentChart").getContext("2d");
               const incidentChart = new Chart(ctx, {
                 type: type,
                 data: data,
                 options: options
               });//end chart
+
         });//end get
 
 }//end buildmap

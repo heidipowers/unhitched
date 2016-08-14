@@ -42,35 +42,59 @@ getIncidents(req, res, next) {
 },
 
   updateIncident(req, res, next) {
-    let diedFalse = false;
-    let diedTrue = true;
-      if (req.body.fatal === 'false'){
-        req.body.fatal = false;
-      } else {
-        req.body.fatal = true;
+
+      let items = [
+      {name: 'incident_type', val: req.body.type},
+      {name: 'incident_month', val: req.body.month},
+      {name: 'incident_year', val: req.body.year},
+      {name: 'horse_name', val: req.body.name},
+      {name: 'incident_desc', val: req.body.description},
+      {name: 'incident_location', val: req.body.location},
+      {name: 'incident_lat', val: req.body.lat},
+      {name: 'incident_lng', val: req.body.lng },
+      {name: 'fatal', val: req.body.fatal}
+      ]
+      let queryString = '';
+      let vals = [];
+      let currVal;
+      let currI = 0;
+
+      console.log(req.body, "this is the req body")
+      console.log(req.params.id, "this is the params")
+
+      for (let i=0; i<items.length; i++) {
+        currVal = items[i].val;
+        console.log('currVal = ', currVal);
+        if (currVal !== undefined && currVal !== '') {
+          if (queryString) {
+            queryString += ", ";
+          }
+          currI += 1;
+          queryString += `${items[i].name}=$${currI}`;
+          vals.push(items[i].val);
+        }
       }
-    _db.any(`UPDATE incidents
-             SET
-             incident_type=$1
-             incident_month=$2,
-             incident_year=$3,
-             horse_name=$4,
-             incident_desc=$5,
-             incident_location=$6,
-             incident_lat=$7,
-             incident_lng=$8,
-             fatal=$9
-             WHERE movie_id=$10`, [req.body.type, req.body.month, req.body.year, req.body.name, req.body.description, req.body.location, Number.parseFloat(req.body.lat), Number.parseFloat(req.body.lng), req.body.fatal, req.params.id])
-        .then(data => {
-          console.log(data)
-          next();
-        })
-        .catch(error => {
-          console.log('editIncident error', error);
-        })
+      currI += 1;
+      vals.push(req.params.id)
+      console.log('queryString = ', queryString);
+      console.log('vals = ', vals);
+      _db.any(`UPDATE incidents SET ${queryString}
+            WHERE incident_id=$${currI};`, vals)
+      .then( data => {
+        res.rows = data;
+        console.log(data, 'data')
+        console.log('Update successful!');
+        next();
+      })
+      .catch( error => {
+        console.log('Error ',error);
+      });
 
   }
 
 
 
-}
+}//end
+
+
+

@@ -12,7 +12,7 @@
 <body>
 
     <div class="contain">
-     <h1>Update</h1>
+     <h2>Add New Incident</h2>
 
           <form name='add-it' method="POST" action="/incident/update">
             <div class="row">
@@ -88,7 +88,7 @@
             <input type="submit" id="add-btn" class="button" value="Add New Incident" />
           </form>
       </section>
-
+    <h2>Update Incident</h2>
      <% incidents.forEach( function(incident){  %>
 
         <div class="update-outer">
@@ -98,14 +98,14 @@
           <p>MONTH: <%= incident.incident_month %></p>
           <p>YEAR: <%= incident.incident_year %></p>
           <p>HORSE: <%= incident.horse_name %></p>
-          <p>DESC: <%= incident.incident_description %></p>
+          <p>DESC: <%= incident.incident_desc %></p>
           <p>LOCATION: <%= incident.incident_location %></p>
           <p>LAT: <%= incident.incident_lat %></p>
           <p>LNG: <%= incident.incident_lng %></p>
           <p>FATAL: <%= incident.fatal %></p>
-          <button>Edit</button>
+          <button id="edit">Edit</button>
 
-          <form name='update-it'>
+          <form name='update-it' class="hidden" method="POST" action="/incident/update/<%= incident.incident_id %>?_method=PUT">
             <div class="row">
               <div class="large-4 columns">
                 <label>TYPE
@@ -154,8 +154,9 @@
             </div>
             <div class="row">
               <div class="large-12 columns">
-                <label>FATAL</label>
-                 <input name="fatal" type="text" placeholder=" <%= incident.fatal %>">
+                <label>FATAL
+                  <input name="fatal" type="text" placeholder=" <%= incident.fatal %>" />
+                </label>
               </div>
             </div>
             <input type="submit" id="update-btn" class="button" value="Update Incident" />
