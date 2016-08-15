@@ -7,7 +7,7 @@ const incidentRouter = require('express').Router();
 
 incidentRouter.route('/update/:id')
   .put(incidentModel.updateIncident, (req, res) => {
-    console.log(req.body, req.params)
+    console.log('**hitting put: **\n',req.body, req.params);
     res.redirect('/incident/update');
   })
 
