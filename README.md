@@ -18,5 +18,5 @@ This project would not have been possible without the contributions of the follo
 *  Node, Javascript/jQuery, PSQL, StackOverflow, Google, the internet, Google Fonts, ScrollMagic, Chart.js.
 
 
-This data was handcrafted from the following sources: www.nycclass.org, www.nyc.gov, www.banhdc.org, and the aldf.org
+This data was handcrafted from the following sources: www.nycclass.org, www.nyc.gov, www.banhdc.org, www.carriagehorsesnyc.blogspot.com, and the aldf.org
 ---
