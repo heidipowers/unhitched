@@ -15,7 +15,7 @@ This project would not have been possible without the contributions of the follo
 * The Dream Team of instructors at GA: Jason, Bobby, and Serge
 * Mike OG, Fizal, Katty Data Scientist, 
 * The many people, institutions, and organizations who sourced the data for this project
-*  Node, Javascript/jQuery, PSQL, StackOverflow, Google, the internet, Google Fonts, ScrollMagic, Chart.js, Photoshop.
+*  Node, Javascript/jQuery, PSQL, StackOverflow, Google, the internet, Google Fonts, ScrollMagic, Chart.js, Photoshop, Timeline.js, Imgur.
 
  This data was handcrafted from the following sources: www.nycclass.org, www.nyc.gov, www.banhdc.org, www.carriagehorsesnyc.blogspot.com, and the www.aldf.org
 ---
@@ -36,12 +36,12 @@ https://law.lclark.edu/live/files/11152-171-hutchison //HISTORY
 
 http://www.laguardiawagnerarchive.lagcc.cuny.edu/FILES_DOC/Microfilms/05/015/0038/00047/051954/05.015.0038.00047.051954.10891989.PDF
 
-http://carriagehorsesnyc.blogspot.com/ //cariage horses nyc incidents
+http://carriagehorsesnyc.blogspot.com/ //cariage horses nyc incidents //INCIDENTS
 
-http://www.aspca.org/about-us/press-releases/aspca-reminds-public-laws-designed-protect-carriage-horses
+http://www.aspca.org/about-us/press-releases/aspca-reminds-public-laws-designed-protect-carriage-horses //LAWS
 
-http://www.gothamgazette.com/index.php/government/5109-horses-new-york-city-central-park-carriage-horses-nypd-mounted
+http://www.gothamgazette.com/index.php/government/5109-horses-new-york-city-central-park-carriage-horses-nypd-mounted //HISTORY
 
-https://www1.nyc.gov/nycbusiness/description/working-horse-license
+https://www1.nyc.gov/nycbusiness/description/working-horse-license //LAWS
 
-http://www.nydailynews.com/new-york/horse-carriage-rate-hike-quietly-approved-de-blasio-admin-article-1.2646008
+http://www.nydailynews.com/new-york/horse-carriage-rate-hike-quietly-approved-de-blasio-admin-article-1.2646008 //HISTORY
