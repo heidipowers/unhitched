@@ -2,7 +2,10 @@
 
 function buildChart(){
 
-
+let colorbright = "#EE6C4D";
+let colordark = "#D3D0CB";
+let colormed = "#6E8898";
+let colorlight = "#2E5266";
 
           console.log('fired')
 
@@ -75,6 +78,7 @@ function buildChart(){
                let type = defaultType;
 
                //GRAPH CHOICE
+               //https://coolors.co
 
                  let graphInput = $userChoice.val();
                   if (graphInput === 'type'){
@@ -89,16 +93,16 @@ function buildChart(){
                               {
                                   data: graphData,
                                   backgroundColor: [
-                                      "#419ea8",
-                                      "#1F1F1F",
-                                      "#3D3D3D",
-                                      "#6f0d0d"
+                                      colorlight,
+                                      colorbright,
+                                      colormed,
+                                      colordark
                                   ],
                                   hoverBackgroundColor: [
-                                      "#FF6384",
-                                      "#36A2EB",
-                                      "#FFCE56",
-                                      "#3D3D3D"
+                                      "#E2C044",
+                                      "#373F51",
+                                      "#A9BCD0",
+                                      "#D8DBE2"
                                   ]
                               }]
                       };
