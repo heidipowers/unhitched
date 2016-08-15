@@ -1,5 +1,8 @@
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  width: 100;
+  margin: 0 auto; }
 
 .contain {
   max-width: 70em;
@@ -7,8 +10,7 @@ body {
 
 #full-length {
   padding: 3em 0;
-  background: #000;
-  /* fallback for old browsers */ }
+  background: #000; }
 
 #intro {
   height: 100vh;
@@ -22,7 +24,7 @@ body {
 
 .content {
   font-size: 2em;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: "Julius Sans One", sans-serif;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5); }
@@ -65,19 +67,16 @@ p {
   opacity: 1; }
 
 #scene3 {
-  background-color: #829399; }
+  background-color: #E8E8E8; }
 
 #animate-left, #animate-right {
   display: inline-block;
   width: 40%;
   margin-left: 50px; }
 
-#map_wrapper {
-  height: 500px; }
-
-#map_canvas {
-  width: 100%;
-  height: 100%; }
+#scene4 {
+  background-color: #f8f8f8;
+  padding: 3em 0; }
 
 .chart-select {
   margin-bottom: 2em;
@@ -103,7 +102,35 @@ p {
 
 .chart-select h2, #map_wrapper h2 {
   font-size: 3em;
-  text-align: center; }
+  text-align: center;
+  background-color: rgba(130, 147, 153, 0.5);
+  padding: 1em;
+  font-family: "Julius Sans One", sans-serif; }
+
+#scene5 {
+  background-color: #fff; }
+
+#map_wrapper h2 {
+  background-color: #E8E8E8; }
+
+#map_wrapper {
+  height: 500px; }
+
+#map_canvas {
+  width: 100%;
+  height: 100%; }
+
+.info_content h3 {
+  color: #373F51;
+  font-family: "Julius Sans One", sans-serif; }
+.info_content p {
+  font-size: 1.2em;
+  width: 100%;
+  padding: 1em 0; }
+
+.infostart {
+  color: #000;
+  font-size: 1.2em; }
 
 .add-new {
   margin: 3em 0;
@@ -121,5 +148,15 @@ p {
 footer {
   min-height: 3em;
   background-color: #000; }
+
+.tl-text h2.tl-headline-title, .tl-text h2.tl-headline {
+  font-family: "Julius Sans One", sans-serif; }
+
+.tl-text p {
+  color: #444; }
+
+.tl-text .tl-headline-date, .tl-text h3.tl-headline-date {
+  color: #829399;
+  font-size: 1.2em; }
 
 /*# sourceMappingURL=app.css.map */

@@ -2,9 +2,17 @@ $main: #fff;
 $accent: #829399;
 $middle: #000;
 $fourth: #829399;
+$animate: #E8E8E8;
+$graph: #f8f8f8;
+$accentDim: rgba(130, 147, 153, .5);
+$map: #fff;
+$headerFont: 'Julius Sans One', sans-serif;
 
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  width: 100;
+  margin: 0 auto;
 }
 
 .contain {
@@ -16,9 +24,7 @@ body {
 //FOUNT IN HEADER PARTIAL
 #full-length {
     padding: 3em 0;
-    background: $middle; /* fallback for old browsers */
-    // background: -webkit-linear-gradient(to bottom, #E8E8E8  , #E8E8E8); /* Chrome 10-25, Safari 5.1-6 */
-    // background: linear-gradient(to bottom, #E8E8E8  , #E8E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: $middle;
 }
 
 #intro {
@@ -35,7 +41,7 @@ body {
 
 .content {
   font-size: 2em;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: $headerFont;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0 ,0, 0, .5);
@@ -65,6 +71,7 @@ p {
     min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
+
 
     //E6DADA
 
@@ -102,7 +109,7 @@ p {
 
 //SCENE 3
 #scene3 {
-  background-color: $fourth;
+  background-color: $animate;
 }
 
 
@@ -113,17 +120,13 @@ p {
   margin-left: 50px;
 }
 
-//MAP
-#map_wrapper {
-    height: 500px;
-}
 
-#map_canvas {
-    width: 100%;
-    height: 100%;
-}
+//Chart //Scene4
 
-//Chart
+#scene4 {
+  background-color: $graph;
+  padding: 3em 0;
+}
 
 .chart-select {
   margin-bottom: 2em;
@@ -155,7 +158,51 @@ p {
 .chart-select h2, #map_wrapper h2 {
     font-size: 3em;
     text-align: center;
+    background-color: $accentDim;
+    padding: 1em;
+    font-family: $headerFont;
 }
+
+//MAP
+  #scene5 {
+   background-color: $map;
+  }
+
+  #map_wrapper h2 {
+    background-color: $animate;
+  }
+
+
+    #map_wrapper {
+        height: 500px;
+    }
+
+    #map_canvas {
+        width: 100%;
+        height: 100%;
+    }
+
+  .info_content {
+
+    h3 {
+    color: #373F51;
+    font-family: $headerFont;
+    }
+
+    p {
+      font-size: 1.2em;
+      width: 100%;
+      padding: 1em 0;
+    }
+  }
+
+  .infostart {
+    color: #000;
+    font-size: 1.2em;
+  }
+
+
+
 //UPDATE
 .add-new {
   margin: 3em 0;
@@ -180,6 +227,21 @@ p {
 footer {
   min-height: 3em;
   background-color: $middle;
+}
+
+//Timeline
+
+.tl-text h2.tl-headline-title, .tl-text h2.tl-headline {
+  font-family: $headerFont;
+}
+
+.tl-text p {
+    color: #444;
+}
+
+.tl-text .tl-headline-date, .tl-text h3.tl-headline-date {
+  color: $accent;
+  font-size: 1.2em;
 }
 
 
