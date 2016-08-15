@@ -2,27 +2,20 @@ $(document).ready(function() {
   console.log('All systems Go')
 
   //SCROLLMAGIC
-  // let controller = new ScrollMagic.Controller();
-
-  // let pinIntroScene = new ScrollMagic.Scene({
-  //   triggerElement: '#top',
-  //   triggerHook: 0,
-  //   duration: 1%
-  // })
-  // .setPin('#top', {pushFollwers:false})
-  // .addTo(controller);
-
-  // $('.info').each(function(){
+  let controller = new ScrollMagic.Controller();
 
 
-  //    let scene1 = new ScrollMagic.Scene({
-  //     triggerElement: this,
-  //     triggerHook: 0.8
-  // })
-  // .setClassToggle(this, 'fade-in')
-  // .addTo(controller);
+  $('.info').each(function(){
 
-  // })
+
+     let scene1 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.8
+  })
+  .setClassToggle(this, 'fade-in')
+  .addTo(controller);
+
+  })
 
 
 

@@ -1,16 +1,29 @@
 {
     "title": {
         "media": {
+          "url": "http://i.imgur.com/D9sSMaq.jpg",
+          "caption": "The Beatles taking a carriage ride 1964"
+        },
+        "text": {
+          "headline": "The Carriage Controversy<br/> New York, New York",
+          "text": "<p>New Yorkers have been battling for decades over the carriages horses industry. While our great city has been taken a strong stance on animal welfare, this is one area where the public, politicians, and media have yet to conclude.</p>"
+        }
+    },
+    "events": [
+      {
+        "media": {
           "url": "https://i.imgur.com/cf5G6vt.jpg",
           "caption": "How Horses Are Abused",
           "credit": "Source: <a href='https://www.animallaw.info/article/development-anti-cruelty-laws-during-1800s#Enforcement on the Streets of New York'>Michigan State University</a><br/>Illustration: <a target='_blank' href='http://imgur.com/cf5G6vt'>Thomas Worth</a>"
+        },
+        "start_date": {
+          "year": "1829"
         },
         "text": {
           "headline": "The New York Law<br/> 1829",
           "text": "<p>New York passed the first law in the United States to protect animals.</p><p>A step in the right direction, the purpose of this law was to protect commercially valuable property from the interference of others, not to protect animals from pain and suffering. </p><p>A crime was committed only if the harmed animal was owned by someone else, thus the language 'of another.'Therefore, if a person maimed his own animal it would not be a crime. Nor was it a crime to harm a wild or ownerless domestic animal.</p>"
         }
     },
-    "events": [
       {
         "media": {
           "url": "https://i.imgur.com/dhDbUDt.jpg",

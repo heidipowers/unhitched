@@ -15,29 +15,30 @@
   <div id="full-length">
 
       <div id="scene1" class="scene">
-        <!-- HISTORY BOOK -->
-        <% include partials/scene_1 %>
+        <!-- PARALLAX DATA -->
+          <% include partials/scene_1 %>
       </div>
 
 
       <div id="scene2" class="scene">
-
+        <!-- TIMELINE -->
         <% include partials/scene_2 %>
-
       </div>
 
       <div id="scene3" class="scene">
-        <!-- TIMELINE -->
+        <!-- CHART -->
         <% include partials/scene_3 %>
       </div>
 
-      <div id="scene4" class="scene">
-        <!-- CHART -->
+      <div id="scene4">
+        <!-- ANITMATION -->
         <% include partials/scene_4 %>
       </div>
 
-
-
+      <div id="scene5">
+        <!-- GOOGLE MAP -->
+        <% include partials/scene_5 %>
+      </div>
 
  <!-- END -->
   </div>
@@ -45,6 +46,6 @@
 
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= googleKey %>&callback=getThatMap" type="text/javascript"></script>
-  <script src="/js/build-map.js"></script>
+
 </body>
 </html>
