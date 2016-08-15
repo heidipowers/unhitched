@@ -118,4 +118,8 @@ p {
 .inner {
   margin-bottom: 3em; }
 
+footer {
+  min-height: 3em;
+  background-color: #000; }
+
 /*# sourceMappingURL=app.css.map */
