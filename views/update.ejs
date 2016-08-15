@@ -13,7 +13,7 @@
 
     <div class="contain">
      <h2>Add New Incident</h2>
-
+        <section class="add-new">
           <form name='add-it' method="POST" action="/incident/update">
             <div class="row">
               <div class="large-4 columns">
@@ -23,7 +23,7 @@
                         <option value="Collapse">Collapse</option>
                         <option value="Park">Park</option>
                       </select>
-                    </label>
+                </label>
               </div>
               <div class="large-4 columns">
                   <label>MONTH
@@ -88,7 +88,9 @@
             <input type="submit" id="add-btn" class="button" value="Add New Incident" />
           </form>
       </section>
+    <hr>
     <h2>Update Incident</h2>
+    <hr>
      <% incidents.forEach( function(incident){  %>
 
         <div class="update-outer">
@@ -103,8 +105,7 @@
           <p>LAT: <%= incident.incident_lat %></p>
           <p>LNG: <%= incident.incident_lng %></p>
           <p>FATAL: <%= incident.fatal %></p>
-          <button id="edit">Edit</button>
-
+        </div>
           <form name='update-it' class="hidden" method="POST" action="/incident/update/<%= incident.incident_id %>?_method=PUT">
             <div class="row">
               <div class="large-4 columns">
@@ -160,14 +161,9 @@
               </div>
             </div>
             <input type="submit" id="update-btn" class="button" value="Update Incident" />
-            <input type="button" id="no-update" class="button" value="Nevermind" />
           </form>
-
           </div>
-        </div>
-
-
-
+      <hr>
       <% }) %>
     </div>
 </body>

@@ -7,12 +7,8 @@ body {
 
 #full-length {
   padding: 3em 0;
-  background: #E8E8E8;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #E8E8E8, #E8E8E8);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #E8E8E8, #E8E8E8);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  background: #000;
+  /* fallback for old browsers */ }
 
 #intro {
   height: 100vh;
@@ -47,24 +43,29 @@ p {
   min-height: 100vh;
   background-repeat: no-repeat;
   background-position: center center; }
+  #scene1 span {
+    color: #800000; }
   #scene1 h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 5em;
-    color: #333;
+    color: #000;
     font-family: 'Fredericka the Great', cursive; }
 
 .info {
   opacity: 0;
   transition: all 2s ease-out;
   margin: 5em 0;
-  background-color: rgba(136, 136, 136, 0.4);
+  background-color: #829399;
   width: 80%;
   margin: 5em auto;
   padding: 4em; }
 
 .fade-in {
   opacity: 1; }
+
+#scene3 {
+  background-color: #829399; }
 
 #animate-left, #animate-right {
   display: inline-block;
@@ -79,10 +80,8 @@ p {
   height: 100%; }
 
 .chart-select {
-  text-align: center;
-  margin-bottom: 2em; }
-  .chart-select h2 {
-    font-size: 3em; }
+  margin-bottom: 2em;
+  text-align: center; }
   .chart-select select {
     min-width: 200px;
     height: 2.4375rem;
@@ -101,5 +100,22 @@ p {
       white-space: pre;
       min-height: 1.2em;
       padding: 0px 2px 1px; }
+
+.chart-select h2, #map_wrapper h2 {
+  font-size: 3em;
+  text-align: center; }
+
+.add-new {
+  margin: 3em 0;
+  background-color: #cecece;
+  padding: 3em; }
+
+.update-outer {
+  margin: 2em 0; }
+  .update-outer h2 {
+    color: red; }
+
+.inner {
+  margin-bottom: 3em; }
 
 /*# sourceMappingURL=app.css.map */

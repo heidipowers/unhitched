@@ -1,3 +1,8 @@
+$main: #fff;
+$accent: #829399;
+$middle: #000;
+$fourth: #829399;
+
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -11,9 +16,9 @@ body {
 //FOUNT IN HEADER PARTIAL
 #full-length {
     padding: 3em 0;
-    background: #E8E8E8; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #E8E8E8  , #E8E8E8); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #E8E8E8  , #E8E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: $middle; /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to bottom, #E8E8E8  , #E8E8E8); /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to bottom, #E8E8E8  , #E8E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #intro {
@@ -63,12 +68,16 @@ p {
 
     //E6DADA
 
+    span {
+      color: #800000;
+    }
+
 
     h2 {
       text-align: center;
       text-transform: uppercase;
       font-size: 5em;
-      color: #333;
+      color: $middle;
       font-family: 'Fredericka the Great', cursive;
 
     }
@@ -79,17 +88,22 @@ p {
     opacity: 0;
     transition: all 2s ease-out;
     margin: 5em 0;
-    background-color: rgba(136, 136, 136, .4);
+    //background-color: rgba(136, 136, 136, .4);
+    background-color: $fourth;
     width: 80%;
     margin: 5em auto;
     padding: 4em;
-
 
     }
 
 .fade-in {
         opacity: 1;
       }
+
+//SCENE 3
+#scene3 {
+  background-color: $fourth;
+}
 
 
 #animate-left, #animate-right {
@@ -112,13 +126,8 @@ p {
 //Chart
 
 .chart-select {
-  text-align: center;
   margin-bottom: 2em;
-
-
-  h2 {
-    font-size: 3em;
-  }
+  text-align: center;
 
   select {
     min-width: 200px;
@@ -141,6 +150,29 @@ p {
         padding: 0px 2px 1px;
         }
   }
+}
+
+.chart-select h2, #map_wrapper h2 {
+    font-size: 3em;
+    text-align: center;
+}
+//UPDATE
+.add-new {
+  margin: 3em 0;
+  background-color: #cecece;
+  padding: 3em;
+}
+
+.update-outer {
+  margin: 2em 0;
+
+  h2 {
+    color: red;
+  }
+}
+
+.inner {
+  margin-bottom: 3em;
 }
 
 
