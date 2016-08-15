@@ -1,0 +1,165 @@
+{
+    "title": {
+        "media": {
+          "url": "http://i.imgur.com/D9sSMaq.jpg",
+          "caption": "The Beatles taking a carriage ride 1964"
+        },
+        "text": {
+          "headline": "The Carriage Controversy<br/> New York, New York",
+          "text": "<p>New Yorkers have been battling for decades over the carriages horse industry. While our great city has long taken a strong stance on animal welfare, this is one debate where the public, politicians, and media have yet to agree.</p>"
+        }
+    },
+    "events": [
+      {
+        "media": {
+          "url": "https://i.imgur.com/cf5G6vt.jpg",
+          "caption": "How Horses Are Abused",
+          "credit": "Source: <a href='https://www.animallaw.info/article/development-anti-cruelty-laws-during-1800s#Enforcement on the Streets of New York'>Michigan State University</a><br/>Illustration: <a target='_blank' href='http://imgur.com/cf5G6vt'>Thomas Worth</a>"
+        },
+        "start_date": {
+          "year": "1829"
+        },
+        "text": {
+          "headline": "The New York Law<br/> 1829",
+          "text": "<p>New York passed the first law in the United States to protect animals.</p><p>A step in the right direction, the purpose of this law was to protect commercially valuable property from the interference of others, not to protect animals from pain and suffering. </p><p>A crime was committed only if the harmed animal was owned by someone else, thus the language 'of another.'Therefore, if a person maimed his own animal it would not be a crime. Nor was it a crime to harm a wild or ownerless domestic animal.</p>"
+        }
+    },
+      {
+        "media": {
+          "url": "https://i.imgur.com/dhDbUDt.jpg",
+          "caption": "The Crowded Car",
+          "credit": "Source: <a href='https://www.animallaw.info/article/development-anti-cruelty-laws-during-1800s#Enforcement on the Streets of New York'>Michigan State University</a><br/>Illustration: Sol Eytinge"
+        },
+        "start_date": {
+          "month": "4",
+          "day": "19",
+          "year": "1866"
+        },
+        "text": {
+          "headline": "The New York Act",
+          "text": "<p>This was the first law in the United States adopted to deal with the issue of animal abandonment, championed by Henry Bergh, founder of the ASPCA.</p><p>In the City of New York, it was often the case that, when a work animal reached a point of age, disease, or exhaustion, so as to no longer have economic value, it was simply abandoned in the streets. It was not only inhumane, but a public health and safety hazzard.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://i.imgur.com/wEdq1Bi.jpg",
+          "caption": "Transitioning City, Union Square, NYC, 1899",
+          "credit": ""
+        },
+        "start_date": {
+          "year": "1935"
+        },
+        "text": {
+          "headline": "A Changing Role",
+          "text": "<p>With the advent of the automobile, only fifteen horse-drawn carriages operated in New York City by 1935, staying mostly within the confines of Central Park.</p><p> However, the Gasoline rations during World War II renewed interest in carriage horse rides, many of the new carriage drivers remained after the war, increasing the competition for business and the industry grew larger as Americans began to vacation in large numbers.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://i.imgur.com/ItilDxf.png",
+          "caption": "Carriage, Central Park",
+          "credit": "Source: <a href='https://law.lclark.edu/live/files/11152-171-hutchison' target='_blank'>Lewis & Clark Law School</a><br>Image: llse Bing, 1936"
+        },
+        "start_date": {
+          "year": "1940"
+        },
+        "end_date": {
+          "year": "1950"
+        },
+        "text": {
+          "headline": "Carriage Horses Medallions",
+          "text": "<p>New York City officially licensed horse-drawn carriages in the late 1940s. Prior to that time, the same medallions, or licenses, were good for both carriages and gas-powered taxis.</p><p>The then-Mayor Bill O'Dwyer created separate licenses and 68 drivers opted to stick with the horses. The medallions cost $100 - $200 each and were all purchased by the same two stable owners.</p><p>There are four carriage stables left in the city, all privately owned and located within a 15-block stretch of the same neighborhood, between W. 37th and W. 52nd Sts., off of 11th Ave.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://i.imgur.com/Ih5S9Hr.png",
+          "caption": "The Battle Rages",
+          "credit": "Source: <a href='http://www.laguardiawagnerarchive.lagcc.cuny.edu/FILES_DOC/Microfilms/05/015/0038/00047/051954/05.015.0038.00047.051954.10891989.PDF' target='_blank' >LaGuardia Community College</a>"
+        },
+        "start_date": {
+          "year": "1980"
+        },
+        "text": {
+          "headline": "Welfare Concerns",
+          "text": "<p>In the 1960s and 1970s, medallion owners began selling their extra licenses, pushing the business farther outside of Central Park as more carriages competed for fares. These new carriage enterprises operated virtually unregulated which resulted in an increase of incidents in public view.</p><p>With this increased awareness, there was a push for laws that would protect the horses from the elements, traffic, exhaustion, and provide better living conditions. The movement to remove the horses from the streets was born, and the movement is very much alive today.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "caption": "",
+          "credit": "Source: <a href='https://www2.nycbar.org/pdf/report/uploads/20072858-ReportandSupportofIntro0573-2014ToBanCarriageHorsesinNYC.pdf' target='_blank'>NYC Bar Association</a>"
+        },
+        "start_date": {
+          "year": "1980"
+        },
+        "end_date": {
+          "year": "1989"
+        },
+        "text": {
+          "headline": "Local Law 89",
+          "text": "<p>With the carriage industry deeply tied to politics, laws regulating the carriage industry are met with intense opposition.</p><p>1981: Horse Licensing and Protection Act was passed requiring horses to be licensed with the city, required better living conditions at the stables, and limited the horses to working 10 hours a day, 7 days a week.</p><p>1989: the City Council—voting 28 to 4 to override Mayor Koch’s veto— enacted Code provisions that, among other things: regulate the time and place that carriage horses can be operated; require licensure of horses, carriages, and drivers; establish minimum standards for the treatment of horses; and require the establishment of an advisory board to make recommendations to the Commissioner of Health to promote the health, safety and well-being of the horses</p><p>1994: The City Council amended the Code to lengthen the hours carriage horses were allowed to work and to enlarge the area in which horse-drawn carriages were allowed to operate.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://i.imgur.com/82dSdyr.gif",
+          "caption": "",
+          "credit": "Source: <a href='https://www2.nycbar.org/pdf/report/uploads/20072858-ReportandSupportofIntro0573-2014ToBanCarriageHorsesinNYC.pdf' target='_blank'>NYC Bar Association</a><br>Illustration: <a href='' target='_blank'></a>"
+        },
+        "start_date": {
+          "year": "2007"
+        },
+        "end_date": {
+          "year": "2010"
+        },
+        "text": {
+          "headline": "The Comptroller Report & Increased Legislation",
+          "text": "<p>April 2010: three years after the <a href='http://comptroller.nyc.gov/wp-content/uploads/documents/MH07_092A.pdf' target='_blank' >New York City Comptroller published a report critical</a> of the City’s enforcement of the laws regulating the carriage-horse industry, the City Council amended the Code to require:</p><ul><li>Stalls be at least 60 square feet with a minimum width of seven feet and room for the horse to safely turn around and lie down within</li><li>Provide horses with a furlough of at least five non-consecutive weeks per year</li><li>Increase the minimum number of required veterinary examinations</li><li>Require that horses be between 5 and 26 years of age at the time they are placed into service or licensed to work</li><li>Increase the fee the industry may charge customers</li><li>Provide for a probationary horse-drawn carriage driver license</li><li>Require additional carriage equipment</li></ul></p>"
+        }
+      },
+      {
+        "media": {
+          "url": "https://vimeo.com/111796493",
+          "caption": "Vimeo trailer for Blinders",
+          "credit": "Video: <a href='https://www.blindersthemovie.com/' target='_blank'>Blinders</a>"
+        },
+        "start_date": {
+          "year": "2008"
+        },
+        "text": {
+          "headline": "Blinders",
+          "text": "<p>In his exposé documentary, filmmaker Donny Moss brings to light the highly controversial horse-drawn carriage industry in New York City.</p><p>Animal rights activists say that the operation of horse-drawn carriages should be banned because it is inhumane and unsafe.</p><p>Carriage operators and city politicians say that horse-drawn carriages should stay because they are a cherished symbol of New York and attract tourists to the city.</p><p>It is important to note that Donny Moss helped start the Anybody But Quinn movement, which helped put Mayor de Blasio in office. De Blasio had promised if elected, he would ban the horse carriages his first week on the job.</p>"
+         }
+        },
+       {
+        "media": {
+          "url": "https://youtu.be/xnNgAKQEN7U",
+          "caption": "The Industry Fights Back",
+          "credit": "Source: <a href='https://nymag.com/daily/intelligencer/2015/06/portraits-9-carriage-drivers-and-their-horses.html' target='_blank'>NY Times</a><br>Video: Save NY Horse Carriages"
+        },
+        "start_date": {
+          "year": "2015"
+        },
+        "text": {
+          "headline": "The People",
+          "text": "<p>With an carriage ban expected to pass, the New York Times profiled the people who would be most affected by changes to the industry - the drivers.</p><p><a href='http://nymag.com/daily/intelligencer/2015/06/portraits-9-carriage-drivers-and-their-horses.html' target='_blank'>Read the story.</a></p><p>The website for the Save NY Horse Carriages is currently not live, but the industry does have a presence at <a href='http://carriageon.com/' target='_blank'>Carriage On</a></p>"
+        }
+      },
+       {
+        "media": {
+          "url": "",
+          "caption": "The Carriage Industry Responds",
+          "credit": "Source: <a href='http://www.nytimes.com/2016/02/05/nyregion horse-carriage-deal-new-york.html' target='_blank'>NY Times</a><br>Video: Save NY Horse Carriages"
+        },
+        "start_date": {
+          "year": "2016"
+        },
+        "text": {
+          "headline": "Intro 573-B Fails",
+          "text": "<p>Mayor de Blasio fails to pass a bill that would restrict the carriage horses to Central Part, reduced the number of animals allowed to be licensed, and require a stable inside Central Park that would be managed and funded by the city.</p><p>The Teamsters, Mr. de Blasio said, “didn’t keep to their agreement — it’s as simple as that.”<p>To further complicate the matter, NYCLASS, one of the leading anti-carriage groups which has donated heavily to support the mayor’s agenda, was issued subpoenas as part of the widening corruption probe related to Mayor de Blasio’s fund-raising efforts.</p>"
+        }
+      }
+    ]
+}

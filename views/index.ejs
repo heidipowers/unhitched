@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include partials/head %>
+</head>
+
+<body>
+
+  <header id="top">
+   <!--  LANDING -->
+      <% include partials/scene_0 %>
+  </header>
+
+  <div id="full-length">
+
+      <div id="scene1" class="scene">
+        <!-- PARALLAX DATA -->
+          <% include partials/scene_1 %>
+      </div>
+
+
+      <div id="scene2" class="scene">
+        <!-- TIMELINE -->
+        <% include partials/scene_2 %>
+      </div>
+
+      <div id="scene3" class="scene">
+        <!-- ANIMATION -->
+        <% include partials/scene_3 %>
+      </div>
+
+   </div>
+
+      <div id="scene4">
+        <!-- CHART -->
+        <% include partials/scene_4 %>
+      </div>
+
+
+      <div id="scene5">
+        <!-- GOOGLE MAP -->
+        <% include partials/scene_5 %>
+      </div>
+
+ <!-- END -->
+
+
+
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= googleKey %>&callback=getThatMap" type="text/javascript"></script>
+
+</body>
+</html>

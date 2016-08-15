@@ -1,50 +1,181 @@
-@charset 'utf-8';
+$main: #fff;
+$accent: #829399;
+$middle: #000;
+$fourth: #829399;
 
-@import 'settings';
-@import 'foundation';
-@import 'motion-ui';
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 
-@include foundation-global-styles;
-@include foundation-grid;
-// @include foundation-flex-grid;
-@include foundation-typography;
-@include foundation-button;
-@include foundation-forms;
-// @include foundation-range-input;
-@include foundation-accordion;
-@include foundation-accordion-menu;
-@include foundation-badge;
-@include foundation-breadcrumbs;
-@include foundation-button-group;
-@include foundation-callout;
-@include foundation-close-button;
-@include foundation-menu;
-@include foundation-menu-icon;
-@include foundation-drilldown-menu;
-@include foundation-dropdown;
-@include foundation-dropdown-menu;
-@include foundation-flex-video;
-@include foundation-label;
-@include foundation-media-object;
-@include foundation-off-canvas;
-@include foundation-orbit;
-@include foundation-pagination;
-@include foundation-progress-bar;
-// @include foundation-progress-element;
-// @include foundation-meter-element;
-@include foundation-slider;
-@include foundation-sticky;
-@include foundation-reveal;
-@include foundation-switch;
-@include foundation-table;
-@include foundation-tabs;
-@include foundation-thumbnail;
-@include foundation-title-bar;
-@include foundation-tooltip;
-@include foundation-top-bar;
-@include foundation-visibility-classes;
-@include foundation-float-classes;
-// @include foundation-flex-classes;
+.contain {
+  max-width: 70em;
+  margin: 0 auto;
+}
 
-@include motion-ui-transitions;
-@include motion-ui-animations;
+
+//FOUNT IN HEADER PARTIAL
+#full-length {
+    padding: 3em 0;
+    background: $middle; /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to bottom, #E8E8E8  , #E8E8E8); /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to bottom, #E8E8E8  , #E8E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#intro {
+    height: 100vh;
+    width: 100vw;
+    background: url('../images/horseanimation.gif');
+    text-align: center;
+    color: #fff;
+    position: relative;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+.content {
+  font-size: 2em;
+  font-family: 'Julius Sans One', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0 ,0, 0, .5);
+
+  h2 {
+    font-size: 1em;
+  }
+
+}
+
+.cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+p {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+//SCENE 2
+#scene1 {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    //E6DADA
+
+    span {
+      color: #800000;
+    }
+
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 5em;
+      color: $middle;
+      font-family: 'Fredericka the Great', cursive;
+
+    }
+
+}
+
+.info {
+    opacity: 0;
+    transition: all 2s ease-out;
+    margin: 5em 0;
+    //background-color: rgba(136, 136, 136, .4);
+    background-color: $fourth;
+    width: 80%;
+    margin: 5em auto;
+    padding: 4em;
+
+    }
+
+.fade-in {
+        opacity: 1;
+      }
+
+//SCENE 3
+#scene3 {
+  background-color: $fourth;
+}
+
+
+#animate-left, #animate-right {
+
+  display: inline-block;
+  width: 40%;
+  margin-left: 50px;
+}
+
+//MAP
+#map_wrapper {
+    height: 500px;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
+
+//Chart
+
+.chart-select {
+  margin-bottom: 2em;
+  text-align: center;
+
+  select {
+    min-width: 200px;
+    height: 2.4375rem;
+    padding: 0.5rem;
+    border: 1px solid #cacaca;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    line-height: normal;
+    color: #0a0a0a;
+    background-color: #fefefe;
+    border-radius: 0;
+
+        option {
+        font-weight: normal;
+        display: block;
+        white-space: pre;
+        min-height: 1.2em;
+        padding: 0px 2px 1px;
+        }
+  }
+}
+
+.chart-select h2, #map_wrapper h2 {
+    font-size: 3em;
+    text-align: center;
+}
+//UPDATE
+.add-new {
+  margin: 3em 0;
+  background-color: #cecece;
+  padding: 3em;
+}
+
+.update-outer {
+  margin: 2em 0;
+
+  h2 {
+    color: red;
+  }
+}
+
+.inner {
+  margin-bottom: 3em;
+}
+
+
+
+
+
