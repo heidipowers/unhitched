@@ -1,5 +1,5 @@
 # Unhitched
-The Community Cat app is about cats, and it's built on rails. 
+Unhitched is a visual representation of the carriage horse industry in NYC.
 ---
 # User Stories
 * As a user, I can view the entire site.
@@ -15,8 +15,7 @@ This project would not have been possible without the contributions of the follo
 * The Dream Team of instructors at GA: Jason, Bobby, and Serge
 * Mike OG, Fizal, Katty Data Scientist, 
 * The many people, institutions, and organizations who sourced the data for this project
-*  Node, Javascript/jQuery, PSQL, StackOverflow, Google, the internet, Google Fonts, ScrollMagic, Chart.js.
+*  Node, Javascript/jQuery, PSQL, StackOverflow, Google, the internet, Google Fonts, ScrollMagic, Chart.js, Photoshop.
 
-
-This data was handcrafted from the following sources: www.nycclass.org, www.nyc.gov, www.banhdc.org, www.carriagehorsesnyc.blogspot.com, and the aldf.org
+ This data was handcrafted from the following sources: www.nycclass.org, www.nyc.gov, www.banhdc.org, www.carriagehorsesnyc.blogspot.com, and the www.aldf.org
 ---
