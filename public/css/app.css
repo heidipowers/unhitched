@@ -1,0 +1,121 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+.contain {
+  max-width: 70em;
+  margin: 0 auto; }
+
+#full-length {
+  padding: 3em 0;
+  background: #000;
+  /* fallback for old browsers */ }
+
+#intro {
+  height: 100vh;
+  width: 100vw;
+  background: url("../images/horseanimation.gif");
+  text-align: center;
+  color: #fff;
+  position: relative;
+  background-position: center center;
+  background-attachment: fixed; }
+
+.content {
+  font-size: 2em;
+  font-family: 'Julius Sans One', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .content h2 {
+    font-size: 1em; }
+
+.cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+p {
+  width: 90%;
+  margin: 0 auto; }
+
+#scene1 {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  #scene1 span {
+    color: #800000; }
+  #scene1 h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5em;
+    color: #000;
+    font-family: 'Fredericka the Great', cursive; }
+
+.info {
+  opacity: 0;
+  transition: all 2s ease-out;
+  margin: 5em 0;
+  background-color: #829399;
+  width: 80%;
+  margin: 5em auto;
+  padding: 4em; }
+
+.fade-in {
+  opacity: 1; }
+
+#scene3 {
+  background-color: #829399; }
+
+#animate-left, #animate-right {
+  display: inline-block;
+  width: 40%;
+  margin-left: 50px; }
+
+#map_wrapper {
+  height: 500px; }
+
+#map_canvas {
+  width: 100%;
+  height: 100%; }
+
+.chart-select {
+  margin-bottom: 2em;
+  text-align: center; }
+  .chart-select select {
+    min-width: 200px;
+    height: 2.4375rem;
+    padding: 0.5rem;
+    border: 1px solid #cacaca;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    line-height: normal;
+    color: #0a0a0a;
+    background-color: #fefefe;
+    border-radius: 0; }
+    .chart-select select option {
+      font-weight: normal;
+      display: block;
+      white-space: pre;
+      min-height: 1.2em;
+      padding: 0px 2px 1px; }
+
+.chart-select h2, #map_wrapper h2 {
+  font-size: 3em;
+  text-align: center; }
+
+.add-new {
+  margin: 3em 0;
+  background-color: #cecece;
+  padding: 3em; }
+
+.update-outer {
+  margin: 2em 0; }
+  .update-outer h2 {
+    color: red; }
+
+.inner {
+  margin-bottom: 3em; }
+
+/*# sourceMappingURL=app.css.map */
