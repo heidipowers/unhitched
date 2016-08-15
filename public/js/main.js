@@ -116,5 +116,15 @@ function animateR() {
 
 animateL();
 animateR();
+
+
+
+ $(window).load(function() {
+  $(".loader").fadeOut("slow");
+})
+
+
 //End File
+
+
 });
