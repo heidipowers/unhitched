@@ -1,8 +1,6 @@
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin: 0;
-  width: 100;
-  margin: 0 auto; }
+  margin: 0; }
 
 .contain {
   max-width: 70em;
@@ -106,6 +104,13 @@ p {
   background-color: rgba(130, 147, 153, 0.5);
   padding: 1em;
   font-family: "Julius Sans One", sans-serif; }
+
+.chart {
+  max-width: 90%;
+  margin: 0 auto; }
+  .chart #incidentChart {
+    width: 100%;
+    height: auto; }
 
 #scene5 {
   background-color: #fff; }

@@ -11,8 +11,6 @@ $headerFont: 'Julius Sans One', sans-serif;
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
-  width: 100;
-  margin: 0 auto;
 }
 
 .contain {
@@ -162,6 +160,18 @@ p {
     padding: 1em;
     font-family: $headerFont;
 }
+
+.chart {
+  max-width: 90%;
+  margin: 0 auto;
+
+    #incidentChart {
+      width: 100%;
+      height: auto;
+    }
+}
+
+
 
 //MAP
   #scene5 {
