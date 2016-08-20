@@ -25,6 +25,7 @@ $(document).ready(function() {
 const leftPull = document.getElementById('left-pull');
 const ctxL = leftPull.getContext('2d');
 
+
 const rightPull = document.getElementById('right-pull');
 const ctxR = rightPull.getContext('2d');
 function SpriteSheet(path, frameWidth, frameHeight, frameSpeed, endFrame) {
@@ -40,7 +41,7 @@ function SpriteSheet(path, frameWidth, frameHeight, frameSpeed, endFrame) {
 
    image.src = path;
 
-   var currentFrame = 0;  // the current frame to draw
+  var currentFrame = 0;  // the current frame to draw
   var counter = 0;       // keep track of frame rate
 
   // Update the animation

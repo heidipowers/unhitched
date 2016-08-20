@@ -1,14 +1,13 @@
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin: 0; }
+   }
 
 .contain {
   max-width: 70em;
   margin: 0 auto; }
 
 #full-length {
-  padding: 3em 0;
-  background: #000; }
+  background: #fff; }
 
 #intro {
   height: 100vh;
@@ -21,12 +20,15 @@ body {
   background-attachment: fixed; }
 
 .content {
-  font-size: 2em;
-  font-family: "Julius Sans One", sans-serif;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5); }
-  .content h2 {
+
+  h1 {
+    font-size: 2.2em;
+    font-family: "Julius Sans One", sans-serif; }
+
+  h2 {
     font-size: 1em; }
 
 .cover {
@@ -41,8 +43,9 @@ p {
 
 #scene1 {
   min-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center center; }
+  min-width: 100%;
+  padding: 3em 0;
+  background-color: #000;}
   #scene1 span {
     color: #800000; }
   #scene1 h2 {
@@ -64,13 +67,25 @@ p {
 .fade-in {
   opacity: 1; }
 
+#scene2 {
+  width: 95%;
+  margin: 0 auto;
+}
+
 #scene3 {
   background-color: #E8E8E8; }
 
-#animate-left, #animate-right {
-  display: inline-block;
-  width: 40%;
-  margin-left: 50px; }
+.animates {
+  width: 95%;
+  margin: 0 auto;
+}
+
+canvas {
+  min-width: 100%;
+  height: auto;
+
+}
+
 
 #scene4 {
   background-color: #f8f8f8;
@@ -105,6 +120,10 @@ p {
   padding: 1em;
   font-family: "Julius Sans One", sans-serif; }
 
+  #map_canvas {
+    height: 500px;
+  }
+
 .chart {
   max-width: 90%;
   margin: 0 auto; }
@@ -117,9 +136,6 @@ p {
 
 #map_wrapper h2 {
   background-color: #E8E8E8; }
-
-#map_wrapper {
-  height: 500px; }
 
 #map_canvas {
   width: 100%;

@@ -14,42 +14,40 @@
 
   <div id="full-length">
 
-      <div id="scene1" class="scene">
-        <!-- PARALLAX DATA -->
+      <div id="scene1" class="scene row">
+
           <% include partials/parallax_info %>
       </div>
 
 
-      <div id="scene2" class="scene">
-        <!-- TIMELINE -->
+      <div id="scene2" class="scene row">
+
         <% include partials/timeline %>
       </div>
 
-      <div id="scene3" class="scene">
-        <!-- ANIMATION -->
+      <div id="scene3" class="scene row">
+
         <% include partials/animate %>
       </div>
 
-      <div id="scene4">
-        <!-- CHART -->
+      <div id="scene4 row">
+
         <% include partials/chart %>
       </div>
 
 
-      <div id="scene5">
-        <!-- GOOGLE MAP -->
+      <div id="scene5 row">
+
         <% include partials/map %>
       </div>
 
- <!-- END -->
-</div>
 
+</div>
 <footer>
 
 </footer>
 
-
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= googleKey %>&callback=getThatMap" type="text/javascript"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= googleKey %>&callback=getThatMap" type="text/javascript"></script>
 
 </body>
 </html>
