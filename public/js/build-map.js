@@ -4,10 +4,9 @@ function getThatMap() {
 
   const drawMap = function(points){
     // Create the map
+    //https://wrightshq.com/playground/placing-multiple-markers-on-a-google-map-using-api-3/
     const mapOptions = {
         scrollwheel: false,
-        //styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2e5d4"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]}]
-        //https://snazzymaps.com
         styles: [
                 {
                     "featureType": "water",
@@ -240,6 +239,8 @@ function getThatMap() {
 
       // Allow each marker to have an info window based on DB info
       const id =  point.incident_id;
+
+
       google.maps.event.addListener(marker, 'click', (function(marker, id) {
 
             return function() {
@@ -248,26 +249,37 @@ function getThatMap() {
             }
         })(marker,id));
 
-
-
       bounds.extend(marker.position)
 
     });//end forEach
 
 
-    //Readjust the map center and zoom
-    incidentMap.fitBounds(bounds)
-
-    const boundsListener = google.maps.event.addListener((incidentMap), 'bounds_changed', function(event) {
+    //set initial zoom after markers are set
+    google.maps.event.addListenerOnce((incidentMap), 'bounds_changed', function(event) {
         this.setZoom(13);
-        google.maps.event.removeListener(boundsListener);
     });
+    //call resize
+    resize();
+    google.maps.event.addDomListener(window, 'resize', resize);
+    //make map responsive
+    //http://jsfiddle.net/eugenebolotin/8m1s69e5/1/
+    function resize() {
+          incidentMap.setCenter(new google.maps.LatLng(40.7504824,-74.0189432));
+          incidentMap.fitBounds(bounds);
+          incidentMap.setZoom(13);
+    }
+
   }
+
+
 
 
 //Go get the data
   $.get('/incident')
     .then(drawMap)
+
+
+//END
 }
 
 

@@ -11,7 +11,6 @@ body {
 
 #intro {
   height: 100vh;
-  width: 100vw;
   background: url("../images/horseanimation.gif");
   text-align: center;
   color: #fff;
@@ -21,7 +20,6 @@ body {
 
 .content {
   height: 100vh;
-  width: 100vw;
   background-color: rgba(0, 0, 0, 0.5); }
 
   h1 {
@@ -42,8 +40,6 @@ p {
   margin: 0 auto; }
 
 #scene1 {
-  min-height: 100vh;
-  min-width: 100%;
   padding: 3em 0;
   background-color: #000;}
   #scene1 span {
@@ -67,29 +63,28 @@ p {
 .fade-in {
   opacity: 1; }
 
-#scene2 {
+/*#scene2 {
   width: 95%;
   margin: 0 auto;
-}
+}*/
 
 #scene3 {
-  background-color: #E8E8E8; }
+  background-color: #E8E8E8;}
 
-.animates {
+/*.animates {
   width: 95%;
   margin: 0 auto;
+}*/
+
+canvas#left-pull, canvas#right-pull {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
-
-canvas {
-  min-width: 100%;
-  height: auto;
-
-}
-
 
 #scene4 {
   background-color: #f8f8f8;
-  padding: 3em 0; }
+  padding: 0 0 3em 0;}
 
 .chart-select {
   margin-bottom: 2em;
@@ -120,9 +115,6 @@ canvas {
   padding: 1em;
   font-family: "Julius Sans One", sans-serif; }
 
-  #map_canvas {
-    height: 500px;
-  }
 
 .chart {
   max-width: 90%;
@@ -132,10 +124,14 @@ canvas {
     height: auto; }
 
 #scene5 {
-  background-color: #fff; }
+  background-color: #fff;}
+
+.map-contain {
+  height: 300px;
+}
 
 #map_wrapper h2 {
-  background-color: #E8E8E8; }
+  background-color: #E8E8E8;}
 
 #map_canvas {
   width: 100%;
