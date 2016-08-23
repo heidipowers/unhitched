@@ -10,13 +10,14 @@ body {
   background: #fff; }
 
 #intro {
-  height: 100vh;
   background: url("../images/horseanimation.gif");
   text-align: center;
   color: #fff;
   position: relative;
   background-position: center center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  /*background-size:contain;
+  background-position:center;*/}
 
 .content {
   height: 100vh;
@@ -53,7 +54,7 @@ p {
 
 .info {
   opacity: 0;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
   margin: 5em 0;
   background-color: #829399;
   width: 80%;
@@ -63,22 +64,13 @@ p {
 .fade-in {
   opacity: 1; }
 
-/*#scene2 {
-  width: 95%;
-  margin: 0 auto;
-}*/
+/*#scene3 {
+  background-color: rgba(130, 147, 153, 0.5);}*/
 
-#scene3 {
-  background-color: rgba(130, 147, 153, 0.5);}
-
-/*.animates {
-  width: 95%;
-  margin: 0 auto;
-}*/
 
 canvas#left-pull, canvas#right-pull {
   width: 100%;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
 }
 

@@ -26,8 +26,11 @@ const leftPull = document.getElementById('left-pull');
 const ctxL = leftPull.getContext('2d');
 
 
+
 const rightPull = document.getElementById('right-pull');
 const ctxR = rightPull.getContext('2d');
+
+
 function SpriteSheet(path, frameWidth, frameHeight, frameSpeed, endFrame) {
 
    var image = new Image();
