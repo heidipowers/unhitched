@@ -1,90 +1,108 @@
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-   }
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 .contain {
-  max-width: 70em;
-  margin: 0 auto; }
+    max-width: 70em;
+    margin: 0 auto;
+}
 
 #full-length {
-  background: #fff; }
+    background: #fff;
+}
 
 #intro {
-  background: url("../images/horseanimation.gif");
-  text-align: center;
-  color: #fff;
-  position: relative;
-  background-position: center center;
-  background-attachment: fixed;
-  /*background-size:contain;
-  background-position:center;*/}
+    background: url("../images/horseanimation.gif");
+    text-align: center;
+    color: #fff;
+    position: relative;
+    background-position: center center;
+    background-attachment: fixed;
+    /*background-size:contain;
+  background-position:center;*/
+}
 
 .content {
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); }
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-  h1 {
+h1 {
     font-size: 2.2em;
-    font-family: "Julius Sans One", sans-serif; }
+    font-family: "Julius Sans One", sans-serif;
+}
 
-  h2 {
-    font-size: 1em; }
+h2 {
+    font-size: 1em;
+}
 
 .cover {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 p {
-  width: 90%;
-  margin: 0 auto; }
+    width: 90%;
+    margin: 0 auto;
+}
 
 #scene1 {
-  padding: 3em 0;
-  background-color: #000;}
-  #scene1 span {
-    color: #800000; }
-  #scene1 h2 {
+    padding: 3em 0;
+    background-color: #000;
+}
+
+#scene1 span {
+    color: #800000;
+}
+
+#scene1 h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 5em;
     color: #000;
-    font-family: 'Fredericka the Great', cursive; }
+    font-family: 'Fredericka the Great', cursive;
+}
 
 .info {
-  opacity: 0;
-  transition: all 1s ease-out;
-  margin: 5em 0;
-  background-color: #829399;
-  width: 80%;
-  margin: 5em auto;
-  padding: 4em; }
+    opacity: 0;
+    transition: all 1s ease-out;
+    margin: 5em 0;
+    background-color: #829399;
+    width: 80%;
+    margin: 5em auto;
+    padding: 4em;
+}
 
 .fade-in {
-  opacity: 1; }
+    opacity: 1;
+}
+
 
 /*#scene3 {
   background-color: rgba(130, 147, 153, 0.5);}*/
 
-
-canvas#left-pull, canvas#right-pull {
+canvas#left-pull,
+canvas#right-pull {
     width: 100%;
 }
 
 .hide {
-  display: inline-block;
+    display: inline-block;
 }
 
-
 #scene4 {
-  background-color: #f8f8f8;
-  padding: 0 0 3em 0;}
+    background-color: #f8f8f8;
+    padding: 0 0 3em 0;
+}
 
 .chart-select {
-  margin-bottom: 2em;
-  text-align: center; }
-  .chart-select select {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.chart-select select {
     min-width: 200px;
     height: 2.4375rem;
     padding: 0.5rem;
@@ -95,136 +113,171 @@ canvas#left-pull, canvas#right-pull {
     line-height: normal;
     color: #0a0a0a;
     background-color: #fefefe;
-    border-radius: 0; }
-    .chart-select select option {
-      font-weight: normal;
-      display: block;
-      white-space: pre;
-      min-height: 1.2em;
-      padding: 0px 2px 1px; }
+    border-radius: 0;
+}
 
-.chart-select h2, #map_wrapper h2 {
-  font-size: 3em;
-  text-align: center;
-  background-color: #E8E8E8;
-  padding: 1em;
-  font-family: "Julius Sans One", sans-serif; }
+.chart-select select option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
 
+.chart-select h2,
+#map_wrapper h2 {
+    font-size: 3em;
+    text-align: center;
+    background-color: #E8E8E8;
+    padding: 1em;
+    font-family: "Julius Sans One", sans-serif;
+}
 
 .chart {
-  max-width: 90%;
-  margin: 0 auto; }
-  .chart #incidentChart {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.chart #incidentChart {
     width: 100%;
-    height: auto; }
+    height: auto;
+}
 
 .chart-info {
-  margin-top: 2em;
+    margin-top: 2em;
 }
 
 .chart-info p {
-  font-size: .8em;
-  font-style: italic;
-  margin-bottom: 2em;
+    font-size: .8em;
+    font-style: italic;
+    margin-bottom: 2em;
 }
 
 #scene5 {
-  background-color: #fff;}
+    background-color: #fff;
+}
 
 .map-contain {
-  height: 300px;
+    height: 500px;
 }
 
 #map_wrapper h2 {
-  background-color: #E8E8E8;}
+    background-color: #E8E8E8;
+}
 
 #map_canvas {
-  width: 100%;
-  height: 100%; }
+    width: 100%;
+    height: 100%;
+}
 
 .info_content h3 {
-  color: #373F51;
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 1em;}
+    color: #373F51;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 1em;
+}
+
 .info_content p {
-  font-size: 1.2em;
-  width: 100%;
-  padding: 1em 0; }
+    font-size: 1.2em;
+    width: 100%;
+    padding: 1em 0;
+}
 
 .infostart {
-  color: #000;
-  font-size: 1.2em; }
+    color: #000;
+    font-size: 1.2em;
+}
 
 .add-new {
-  margin: 3em 0;
-  background-color: #cecece;
-  padding: 3em; }
+    margin: 3em 0;
+    background-color: #cecece;
+    padding: 3em;
+}
 
 .update-outer {
-  margin: 2em 0; }
-  .update-outer h2 {
-    color: red; }
+    margin: 2em 0;
+}
+
+.update-outer h2 {
+    color: red;
+}
 
 .inner {
-  margin-bottom: 3em; }
+    margin-bottom: 3em;
+}
 
 footer {
-  min-height: 3em;
-  background-color: #000; }
+    min-height: 3em;
+    background-color: #000;
+}
 
 #timeline-embed {
-  height: 600px;
-  width: 100%;
+    height: 600px;
+    width: 100%;
 }
 
-.tl-text h2.tl-headline-title, .tl-text h2.tl-headline {
-  font-family: "Julius Sans One", sans-serif; }
+.tl-text h2.tl-headline-title,
+.tl-text h2.tl-headline {
+    font-family: "Julius Sans One", sans-serif;
+}
 
 .tl-text p {
-  color: #444; }
+    color: #444;
+}
 
-.tl-text .tl-headline-date, .tl-text h3.tl-headline-date {
-  color: #829399;
-  font-size: 1.2em; }
+.tl-text .tl-headline-date,
+.tl-text h3.tl-headline-date {
+    color: #829399;
+    font-size: 1.2em;
+}
+
 
 /*Extra small devices (portrait phones, less than 544px)*/
+
 @media (max-width: 543px) {
- .hide {
-  display: none;
+    .hide {
+        display: none;
+    }
 }
- }
+
 
 /*// Small devices (landscape phones, less than 768px)*/
+
 @media (max-width: 767px) {
+    .chart-select h2,
+    #map_wrapper h2,
+    #scene1 h2 {
+        font-size: 2em;
+    }
+    .cover {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2em;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    .info {
+        width: 90%;
+        padding: 2em;
+        margin: 2em auto;
+    }
 
-
-.chart-select h2, #map_wrapper h2, #scene1 h2 {
-  font-size: 2em;
+    .map-contain {
+    height: 300px;
+    }
 }
 
-.cover {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 2em;
-}
-
-h1 {
-  font-size: 1.8em;
-}
-
-.info {
-  width: 90%;
-  padding: 2em;
-  margin: 2em auto;
-}
-
-}
 
 /*// Medium devices (tablets, less than 992px)*/
-@media (max-width: 991px) {  }
+
+@media (max-width: 991px) {}
+
 
 /*// Large devices (desktops, less than 1200px)*/
-@media (max-width: 1199px) {  }
+
+@media (max-width: 1199px) {}
+
+
 /*# sourceMappingURL=app.css.map */
