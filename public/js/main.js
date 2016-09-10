@@ -2,13 +2,13 @@ $(document).ready(function() {
   console.log('All systems Go')
 
   //SCROLLMAGIC
-  let controller = new ScrollMagic.Controller();
+  var controller = new ScrollMagic.Controller();
 
 
   $('.info').each(function(){
 
 
-     let scene1 = new ScrollMagic.Scene({
+     var scene1 = new ScrollMagic.Scene({
       triggerElement: this,
       triggerHook: 0.8
   })
@@ -22,15 +22,11 @@ $(document).ready(function() {
 //ANIMATION
 //http://gamedevelopment.tutsplus.com/tutorials/an-introduction-to-spritesheet-animation--gamedev-13099
 
-const leftPull = document.getElementById('left-pull');
-const ctxL = leftPull.getContext('2d');
+var leftPull = document.getElementById('left-pull');
+var ctxL = leftPull.getContext('2d');
 
-
-
-const rightPull = document.getElementById('right-pull');
-const ctxR = rightPull.getContext('2d');
-
-
+var rightPull = document.getElementById('right-pull');
+var ctxR = rightPull.getContext('2d');
 function SpriteSheet(path, frameWidth, frameHeight, frameSpeed, endFrame) {
 
    var image = new Image();
@@ -44,7 +40,7 @@ function SpriteSheet(path, frameWidth, frameHeight, frameSpeed, endFrame) {
 
    image.src = path;
 
-  var currentFrame = 0;  // the current frame to draw
+   var currentFrame = 0;  // the current frame to draw
   var counter = 0;       // keep track of frame rate
 
   // Update the animation
