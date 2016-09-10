@@ -131,7 +131,8 @@ canvas#left-pull, canvas#right-pull {
 
 .info_content h3 {
   color: #373F51;
-  font-family: "Julius Sans One", sans-serif; }
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1em;}
 .info_content p {
   font-size: 1.2em;
   width: 100%;
