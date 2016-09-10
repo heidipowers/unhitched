@@ -1,9 +1,5 @@
 'use strict'
 
-
-
-
-
 function buildChart(incidents){
 
               var traffic = 0;
@@ -181,18 +177,6 @@ var $userChoice = $('#chart-select');
  $userChoice.on('change', function(){
     $.get('/incident')
       .then(buildChart)
- });
-
-
-
-
-
-
-
-
-
-
-
  });
 
 
