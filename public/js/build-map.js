@@ -2,10 +2,10 @@
 
 function getThatMap() {
 
-  const drawMap = function(points){
+  var drawMap = function(points){
     // Create the map
     //https://wrightshq.com/playground/placing-multiple-markers-on-a-google-map-using-api-3/
-    const mapOptions = {
+    var mapOptions = {
         scrollwheel: false,
         styles: [
                 {
@@ -184,18 +184,18 @@ function getThatMap() {
                 }
             ]
     };
-    const incidentMap = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-    const bounds = new google.maps.LatLngBounds()
+    var incidentMap = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+    var bounds = new google.maps.LatLngBounds()
 
     // Create information Window
-    const infoWindow = new google.maps.InfoWindow();
+    var infoWindow = new google.maps.InfoWindow();
 
     points.forEach(function(point){
 
       // Display multiple markers on a map based on DB info
-      const {incident_lat:lat,incident_lng:lng, incident_location:title} = point
+      var {incident_lat:lat,incident_lng:lng, incident_location:title} = point
 
-      const infoWindowContent =
+      var infoWindowContent =
         '<div class="info_content">' +
         '<h3><span class="infostart">Incident Type:</span> '+ point.incident_type + '</h3>' +
         '<h3><span class="infostart">Date of Incident:</span> '+ point.incident_month + " " + point.incident_year + '</h3>' +
@@ -204,14 +204,14 @@ function getThatMap() {
         '<p>' + point.incident_desc + '</p>' + '</div>';
 
         //Set the Marker
-       let mapMarker;
+       var mapMarker;
 
-       let blackMarker = {
+       var blackMarker = {
             url: '../images/blackMarker.png',
             scaledSize: new google.maps.Size(20, 27),
         };
 
-        let redMarker = {
+        var redMarker = {
             url: '../images/redMarker.png',
             scaledSize: new google.maps.Size(20, 27),
         };
@@ -227,7 +227,7 @@ function getThatMap() {
             }
 
 
-          const marker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
             position: new google.maps.LatLng(Number.parseFloat(lat), Number.parseFloat(lng)),
             map: incidentMap,
             title: title,
@@ -238,7 +238,7 @@ function getThatMap() {
 
 
       // Allow each marker to have an info window based on DB info
-      const id =  point.incident_id;
+      var id =  point.incident_id;
 
 
       google.maps.event.addListener(marker, 'click', (function(marker, id) {

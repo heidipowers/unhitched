@@ -68,16 +68,14 @@ p {
   background-color: rgba(130, 147, 153, 0.5);}*/
 
 
-/*canvas#left-pull, canvas#right-pull {
-  width: 100%;
-  display: inline-block;
-  margin: 0 auto;
-}*/
+canvas#left-pull, canvas#right-pull {
+    width: 100%;
+}
 
-#animate-left, #animate-right {
+.hide {
   display: inline-block;
-  width: 40%;
-  margin-left: 50px; }
+}
+
 
 #scene4 {
   background-color: #f8f8f8;
@@ -119,6 +117,16 @@ p {
   .chart #incidentChart {
     width: 100%;
     height: auto; }
+
+.chart-info {
+  margin-top: 2em;
+}
+
+.chart-info p {
+  font-size: .8em;
+  font-style: italic;
+  margin-bottom: 2em;
+}
 
 #scene5 {
   background-color: #fff;}
@@ -179,4 +187,44 @@ footer {
   color: #829399;
   font-size: 1.2em; }
 
+/*Extra small devices (portrait phones, less than 544px)*/
+@media (max-width: 543px) {
+ .hide {
+  display: none;
+}
+ }
+
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px) {
+
+
+.chart-select h2, #map_wrapper h2, #scene1 h2 {
+  font-size: 2em;
+}
+
+.cover {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+.info {
+  width: 90%;
+  padding: 2em;
+  margin: 2em auto;
+}
+
+}
+
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991px) {  }
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199px) {  }
 /*# sourceMappingURL=app.css.map */

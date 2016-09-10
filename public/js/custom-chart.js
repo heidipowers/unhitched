@@ -1,17 +1,13 @@
 'use strict'
 
-
-
-
-
 function buildChart(incidents){
 
-              let traffic = 0;
-              let fatalities = 0;
-              let park = 0;
-              let collapse = 0;
-              let total = incidents.length;
-              let years = [];
+              var traffic = 0;
+              var fatalities = 0;
+              var park = 0;
+              var collapse = 0;
+              var total = incidents.length;
+              var years = [];
 
 
 
@@ -34,16 +30,16 @@ function buildChart(incidents){
               })//end forEach
 
                //Collect the number of incidents per year
-              let yearsCollect = {};
-              for(let i = 0; i< years.length; i++) {
-                 //let count = years[i];
+              var yearsCollect = {};
+              for(var i = 0; i< years.length; i++) {
+                 //var count = years[i];
                  yearsCollect[years[i]] = yearsCollect[years[i]] ? yearsCollect[years[i]]+1 : 1;
 
               }
 
               //Make yearsCollect into 2 arrays
-              let yearNum = [];
-              let yearCount = [];
+              var yearNum = [];
+              var yearCount = [];
 
               for (var year in yearsCollect) {
                 if (yearsCollect.hasOwnProperty(year)) {
@@ -54,11 +50,11 @@ function buildChart(incidents){
 
 
               //SET CHART VARIABLES
-               const defaultLabel = ["Traffic Incidents", "Horse Collapses", "Incident Inside Central Park", "Horse Fatality"];
-               const defaultData = [traffic, collapse, park, fatalities];
-               const defaultType = 'bar';
-               let data;
-               let options = {
+               var defaultLabel = ["Traffic Incidents", "Horse Collapses", "Incident Inside Central Park", "Horse Fatality"];
+               var defaultData = [traffic, collapse, park, fatalities];
+               var defaultType = 'bar';
+               var data;
+               var options = {
                               legend: {
                                   display: true,
                                   labels: {
@@ -68,19 +64,19 @@ function buildChart(incidents){
                               }
                           }
                //Set Page Load Chart
-               let graphLabels = defaultLabel;
-               let graphData = defaultData;
-               let type = defaultType;
+               var graphLabels = defaultLabel;
+               var graphData = defaultData;
+               var type = defaultType;
 
 
                //GRAPH CHOICE
                //https://coolors.co
-              let colorbright = "#EE6C4D";
-              let colordark = "#D3D0CB";
-              let colormed = "#6E8898";
-              let colorlight = "#2E5266";
+              var colorbright = "#EE6C4D";
+              var colordark = "#D3D0CB";
+              var colormed = "#6E8898";
+              var colorlight = "#2E5266";
 
-                 let graphInput = $userChoice.val();
+                 var graphInput = $userChoice.val();
                   if (graphInput === 'type'){
 
                       type = 'pie';
@@ -148,21 +144,21 @@ function buildChart(incidents){
 
 
               //DIV THAT HOLDS THE CANVAS
-              const chartDiv = $('.chart');
+              var chartDiv = $('.chart');
 
               //EMPTY THE CHART DIV OF ANY CANVAS
               chartDiv.empty();
 
               //CREATE THE CANVAS AND APPEND TO THE CHART DIV
-              const canvas = $('<canvas id="incidentChart">');
+              var canvas = $('<canvas id="incidentChart">');
               chartDiv.append(canvas);
 
               //DECLARE CANVAS
-              const chart = document.getElementById("incidentChart").getContext("2d");
+              var chart = document.getElementById("incidentChart").getContext("2d");
 
 
 
-                const incidentChart = new Chart(chart, {
+                var incidentChart = new Chart(chart, {
                 type: type,
                 data: data,
                 options: options
@@ -177,7 +173,7 @@ function buildChart(incidents){
 $.get('/incident')
   .then(buildChart)
 //update Chart on userChoice
-const $userChoice = $('#chart-select');
+var $userChoice = $('#chart-select');
  $userChoice.on('change', function(){
     $.get('/incident')
       .then(buildChart)
