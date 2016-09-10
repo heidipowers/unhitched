@@ -68,16 +68,10 @@ p {
   background-color: rgba(130, 147, 153, 0.5);}*/
 
 
-/*canvas#left-pull, canvas#right-pull {
-  width: 100%;
-  display: inline-block;
-  margin: 0 auto;
-}*/
+canvas#left-pull, canvas#right-pull {
+    width: 100%;
+}
 
-#animate-left, #animate-right {
-  display: inline-block;
-  width: 40%;
-  margin-left: 50px; }
 
 #scene4 {
   background-color: #f8f8f8;
@@ -119,6 +113,16 @@ p {
   .chart #incidentChart {
     width: 100%;
     height: auto; }
+
+.chart-info {
+  margin-top: 2em;
+}
+
+.chart-info p {
+  font-size: .8em;
+  font-style: italic;
+  margin-bottom: 2em;
+}
 
 #scene5 {
   background-color: #fff;}
