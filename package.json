@@ -4,7 +4,7 @@
   "description": "A visual reprentation of the carriage horse industry in NYC",
   "main": "app.js",
   "engines": {
-    "node": "6.2.1"
+    "node": "6.11.1"
   },
   "private": true,
   "scripts": {
