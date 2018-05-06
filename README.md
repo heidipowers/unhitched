@@ -21,7 +21,7 @@ This project would not have been possible without the contributions of the follo
  This data was handcrafted from the following sources: www.nycclass.org, www.nyc.gov, www.banhdc.org, www.carriagehorsesnyc.blogspot.com, and the www.aldf.org
 ---
 
-###Data Sources
+### Data Sources
 
 http://blogs.wsj.com/metropolis/2014/03/24/carriage-horses-now-controversial-have-a-long-city-history/ //HISTORY
 
