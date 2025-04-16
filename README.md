@@ -1,10 +1,6 @@
 # Unhitched
 Unhitched is a visual representation of the carriage horse industry in NYC.
 ---
-# User Stories
-* As a user, I can view the entire site.
-* As a user, I can interact with the data.
-* As a user, I educate myself on the carriage industry.
 
 ### Data Sources
 
